@@ -1,0 +1,501 @@
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+
+\bibitem[\protect\citeauthoryear{{Armstrong}, {For}  \& {Bekki}}{{Armstrong}
+  et~al.}{2018}]{K33_Armstrong_et_al2018}
+{Armstrong} B.,  {For} B.~Q.,   {Bekki} K.,  2018, \mn@doi [\mnras]
+  {10.1093/mnras/sty2445}, \href
+  {https://ui.adsabs.harvard.edu/abs/2018MNRAS.481.3651A} {481, 3651}
+
+\bibitem[\protect\citeauthoryear{{Barth}, {Gerber}, {Boberg}, {Friel}  \&
+  {Vesperini}}{{Barth} et~al.}{2020}]{K21_Barth_et_al2020}
+{Barth} N.~A.,  {Gerber} J.~M.,  {Boberg} O.~M.,  {Friel} E.~D.,   {Vesperini}
+  E.,  2020, \mn@doi [\mnras] {10.1093/mnras/staa1019}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020MNRAS.494.4548B} {494, 4548}
+
+\bibitem[\protect\citeauthoryear{{Baumgardt}, {Parmentier}, {Anders}  \&
+  {Grebel}}{{Baumgardt} et~al.}{2013}]{K42_Baumgardt_et_al2013}
+{Baumgardt} H.,  {Parmentier} G.,  {Anders} P.,   {Grebel} E.~K.,  2013,
+  \mn@doi [\mnras] {10.1093/mnras/sts667}, \href
+  {https://ui.adsabs.harvard.edu/abs/2013MNRAS.430..676B} {430, 676}
+
+\bibitem[\protect\citeauthoryear{{Bekki}}{{Bekki}}{2010}]{K26_Bekki2010}
+{Bekki} K.,  2010, \mn@doi [\apjl] {10.1088/2041-8205/724/1/L99}, \href
+  {https://ui.adsabs.harvard.edu/abs/2010ApJ...724L..99B} {724, L99}
+
+\bibitem[\protect\citeauthoryear{Bekki}{Bekki}{2013}]{K5_Bekki2013}
+Bekki K.,  2013, \mn@doi [Monthly Notices of the Royal Astronomical Society]
+  {10.1093/mnras/stt589}, 432, 2298–2323
+
+\bibitem[\protect\citeauthoryear{Bekki}{Bekki}{2015}]{K6_Bekki2015}
+Bekki K.,  2015, \mn@doi [Monthly Notices of the Royal Astronomical Society]
+  {10.1093/mnras/stv165}, 449, 1625–1649
+
+\bibitem[\protect\citeauthoryear{{Bekki}}{{Bekki}}{2019}]{K27_Bekki2019}
+{Bekki} K.,  2019, \mn@doi [\aap] {10.1051/0004-6361/201629898}, \href
+  {https://ui.adsabs.harvard.edu/abs/2019A&A...622A..53B} {622, A53}
+
+\bibitem[\protect\citeauthoryear{{Bekki} \& {Chiba}}{{Bekki} \&
+  {Chiba}}{2005}]{M8_Bekki_Chiba2005}
+{Bekki} K.,  {Chiba} M.,  2005, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2004.08510.x}, \href
+  {https://ui.adsabs.harvard.edu/abs/2005MNRAS.356..680B} {356, 680}
+
+\bibitem[\protect\citeauthoryear{{Bekki} \& {Chiba}}{{Bekki} \&
+  {Chiba}}{2007a}]{29Bekki_Chiba2007}
+{Bekki} K.,  {Chiba} M.,  2007a, \mn@doi [\pasa] {10.1071/AS06023}, \href
+  {https://ui.adsabs.harvard.edu/abs/2007PASA...24...21B} {24, 21}
+
+\bibitem[\protect\citeauthoryear{{Bekki} \& {Chiba}}{{Bekki} \&
+  {Chiba}}{2007b}]{K35_Bekki_Chiba2007}
+{Bekki} K.,  {Chiba} M.,  2007b, \mn@doi [\mnras]
+  {10.1111/j.1745-3933.2007.00357.x}, \href
+  {https://ui.adsabs.harvard.edu/abs/2007MNRAS.381L..16B} {381, L16}
+
+\bibitem[\protect\citeauthoryear{Bekki \& Chiba}{Bekki \&
+  Chiba}{2008}]{K2_Bekki_Chiba2008}
+Bekki K.,  Chiba M.,  2008, \mn@doi [The Astrophysical Journal]
+  {10.1086/589441}, 679, L89–L92
+
+\bibitem[\protect\citeauthoryear{{Bekki} \& {Chiba}}{{Bekki} \&
+  {Chiba}}{2009}]{17Bekki_Chiba2009}
+{Bekki} K.,  {Chiba} M.,  2009, \mn@doi [\pasa] {10.1071/AS08020}, \href
+  {https://ui.adsabs.harvard.edu/abs/2009PASA...26...48B} {26, 48}
+
+\bibitem[\protect\citeauthoryear{{Bekki} \& {Mackey}}{{Bekki} \&
+  {Mackey}}{2009}]{K32_Bekki_Mackey2009}
+{Bekki} K.,  {Mackey} A.~D.,  2009, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2008.14320.x}, \href
+  {https://ui.adsabs.harvard.edu/abs/2009MNRAS.394..124B} {394, 124}
+
+\bibitem[\protect\citeauthoryear{Bekki \& Stanimirović}{Bekki \&
+  Stanimirović}{2009}]{K1_Bekki_Stanimirovic2009}
+Bekki K.,  Stanimirović S.,  2009, \mn@doi [Monthly Notices of the Royal
+  Astronomical Society] {10.1111/j.1365-2966.2009.14514.x}, 395, 342
+
+\bibitem[\protect\citeauthoryear{{Bekki}, {Beasley}, {Forbes}  \&
+  {Couch}}{{Bekki} et~al.}{2004}]{79Bekki_et_al2004}
+{Bekki} K.,  {Beasley} M.~A.,  {Forbes} D.~A.,   {Couch} W.~J.,  2004, \mn@doi
+  [\apj] {10.1086/381171}, \href
+  {https://ui.adsabs.harvard.edu/abs/2004ApJ...602..730B} {602, 730}
+
+\bibitem[\protect\citeauthoryear{{Bergvall}, {Laurikainen}  \&
+  {Aalto}}{{Bergvall} et~al.}{2003}]{21Bergvall_Laurikainen_Aalto2003}
+{Bergvall} N.,  {Laurikainen} E.,   {Aalto} S.,  2003, \mn@doi [\aap]
+  {10.1051/0004-6361:20030542}, \href
+  {https://ui.adsabs.harvard.edu/abs/2003A&A...405...31B} {405, 31}
+
+\bibitem[\protect\citeauthoryear{{Besla}, {Kallivayalil}, {Hernquist}, {van der
+  Marel}, {Cox}  \& {Kere{\v{s}}}}{{Besla} et~al.}{2012}]{K13_Besla_et_al2012}
+{Besla} G.,  {Kallivayalil} N.,  {Hernquist} L.,  {van der Marel} R.~P.,  {Cox}
+  T.~J.,   {Kere{\v{s}}} D.,  2012, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2012.20466.x}, \href
+  {https://ui.adsabs.harvard.edu/abs/2012MNRAS.421.2109B} {421, 2109}
+
+\bibitem[\protect\citeauthoryear{Bianchini, van der Marel, del Pino, Watkins,
+  Bellini, Fardal, Libralato  \& Sills}{Bianchini
+  et~al.}{2018}]{K20_Bianchini_et_al2018}
+Bianchini P.,  van der Marel R.~P.,  del Pino A.,  Watkins L.~L.,  Bellini A.,
+   Fardal M.~A.,  Libralato M.,   Sills A.,  2018, \mn@doi [Monthly Notices of
+  the Royal Astronomical Society] {10.1093/mnras/sty2365}, 481, 2125–2139
+
+\bibitem[\protect\citeauthoryear{{Bica}, {Westera}, {Kerber}, {Dias}, {Maia},
+  {Santos}, {Barbuy}  \& {Oliveira}}{{Bica} et~al.}{2020}]{K41_Bica_et_al2020}
+{Bica} E.,  {Westera} P.,  {Kerber} L. d.~O.,  {Dias} B.,  {Maia} F.,  {Santos}
+  Jo{\~a}o F.~C. J.,  {Barbuy} B.,   {Oliveira} R. A.~P.,  2020, \mn@doi [\aj]
+  {10.3847/1538-3881/ab6595}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020AJ....159...82B} {159, 82}
+
+\bibitem[\protect\citeauthoryear{Bitsakis, Gonz{\'a}lez-L{\'o}pezlira, Bonfini,
+  Bruzual, Maravelias, Zaritsky, Charlot  \& Ram{\'i}rez-Siordia}{Bitsakis
+  et~al.}{2018}]{11Bitsakis_et_al2018}
+Bitsakis T.,  Gonz{\'a}lez-L{\'o}pezlira R.~A.,  Bonfini P.,  Bruzual G.,
+  Maravelias G.,  Zaritsky D.,  Charlot S.,   Ram{\'i}rez-Siordia V.~H.,  2018,
+  \mn@doi [{The Astrophysical Journal}] {10.3847/1538-4357/aaa244}, 853
+
+\bibitem[\protect\citeauthoryear{{Boutloukos} \& {Lamers}}{{Boutloukos} \&
+  {Lamers}}{2003}]{4Boutloukos_Lamers2003}
+{Boutloukos} S.~G.,  {Lamers} H.~J.~G.~L.~M.,  2003, \mn@doi [\mnras]
+  {10.1046/j.1365-8711.2003.06083.x}, \href
+  {https://ui.adsabs.harvard.edu/abs/2003MNRAS.338..717B} {338, 717}
+
+\bibitem[\protect\citeauthoryear{{Chiosi}, {Vallenari}, {Held}, {Rizzi}  \&
+  {Moretti}}{{Chiosi} et~al.}{2006}]{16Chiosi_et_al2006}
+{Chiosi} E.,  {Vallenari} A.,  {Held} E.~V.,  {Rizzi} L.,   {Moretti} A.,
+  2006, \mn@doi [\aap] {10.1051/0004-6361:20054559}, \href
+  {https://ui.adsabs.harvard.edu/abs/2006A&A...452..179C} {452, 179}
+
+\bibitem[\protect\citeauthoryear{{Choudhury}, {Subramaniam}, {Cole}  \&
+  {Sohn}}{{Choudhury} et~al.}{2018}]{K22_Choudhury_et_al2018}
+{Choudhury} S.,  {Subramaniam} A.,  {Cole} A.~A.,   {Sohn} Y.~J.,  2018,
+  \mn@doi [\mnras] {10.1093/mnras/sty087}, \href
+  {https://ui.adsabs.harvard.edu/abs/2018MNRAS.475.4279C} {475, 4279}
+
+\bibitem[\protect\citeauthoryear{{Cullinane}, {Mackey}, {Da Costa}, {Erkal},
+  {Koposov}  \& {Belokurov}}{{Cullinane} et~al.}{2021}]{M6_Cullinane_et_al2021}
+{Cullinane} L.~R.,  {Mackey} A.~D.,  {Da Costa} G.~S.,  {Erkal} D.,  {Koposov}
+  S.~E.,   {Belokurov} V.,  2021, arXiv e-prints, \href
+  {https://ui.adsabs.harvard.edu/abs/2021arXiv210603274C} {p. arXiv:2106.03274}
+
+\bibitem[\protect\citeauthoryear{{D'Onghia} \& {Fox}}{{D'Onghia} \&
+  {Fox}}{2016}]{K43_DOnghia_Fox2016}
+{D'Onghia} E.,  {Fox} A.~J.,  2016, \mn@doi [\araa]
+  {10.1146/annurev-astro-081915-023251}, \href
+  {https://ui.adsabs.harvard.edu/abs/2016ARA&A..54..363D} {54, 363}
+
+\bibitem[\protect\citeauthoryear{{Da Costa}}{{Da
+  Costa}}{1991}]{K14_Da_Costa1991}
+{Da Costa} G.~S.,  1991, in {Haynes} R.,  {Milne} D.,  eds, ~ Vol. 148, The
+  Magellanic Clouds. p.~183
+
+\bibitem[\protect\citeauthoryear{{Da Costa}}{{Da Costa}}{2002}]{5Da_Costa2002}
+{Da Costa} G.~S.,  2002, in {Geisler} D.~P.,  {Grebel} E.~K.,   {Minniti} D.,
+  eds, ~ Vol. 207, Extragalactic Star Clusters. p.~83 (\mn@eprint {arXiv}
+  {astro-ph/0106122})
+
+\bibitem[\protect\citeauthoryear{{Dalessandro}, {Lapenna}, {Mucciarelli},
+  {Origlia}, {Ferraro}  \& {Lanzoni}}{{Dalessandro}
+  et~al.}{2016}]{M5_Dalessandro_et_al2016}
+{Dalessandro} E.,  {Lapenna} E.,  {Mucciarelli} A.,  {Origlia} L.,  {Ferraro}
+  F.~R.,   {Lanzoni} B.,  2016, \mn@doi [\apj] {10.3847/0004-637X/829/2/77},
+  \href {https://ui.adsabs.harvard.edu/abs/2016ApJ...829...77D} {829, 77}
+
+\bibitem[\protect\citeauthoryear{{Dias}, {Kerber}, {Barbuy}, {Bica}  \&
+  {Ortolani}}{{Dias} et~al.}{2016}]{K40_Dias_et_al2016}
+{Dias} B.,  {Kerber} L.,  {Barbuy} B.,  {Bica} E.,   {Ortolani} S.,  2016,
+  \mn@doi [\aap] {10.1051/0004-6361/201527558}, \href
+  {https://ui.adsabs.harvard.edu/abs/2016A&A...591A..11D} {591, A11}
+
+\bibitem[\protect\citeauthoryear{Diaz \& Bekki}{Diaz \&
+  Bekki}{2012}]{K3_Diaz_Bekki2012}
+Diaz J.~D.,  Bekki K.,  2012, \mn@doi [The Astrophysical Journal]
+  {10.1088/0004-637x/750/1/36}, 750, 36
+
+\bibitem[\protect\citeauthoryear{{Elson}, {Fall}  \& {Freeman}}{{Elson}
+  et~al.}{1987}]{K31Elson_Fall_Freeman1987}
+{Elson} R. A.~W.,  {Fall} S.~M.,   {Freeman} K.~C.,  1987, \mn@doi [\apj]
+  {10.1086/165807}, \href
+  {https://ui.adsabs.harvard.edu/abs/1987ApJ...323...54E} {323, 54}
+
+\bibitem[\protect\citeauthoryear{{Erkal} \& {Belokurov}}{{Erkal} \&
+  {Belokurov}}{2020}]{R2Erkal_Belokurov2020}
+{Erkal} D.,  {Belokurov} V.~A.,  2020, \mn@doi [\mnras]
+  {10.1093/mnras/staa1238}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.2554E} {495, 2554}
+
+\bibitem[\protect\citeauthoryear{{Erkal} et~al.,}{{Erkal}
+  et~al.}{2019}]{R1Erkal_et_al2019}
+{Erkal} D.,  et~al., 2019, \mn@doi [\mnras] {10.1093/mnras/stz1371}, \href
+  {https://ui.adsabs.harvard.edu/abs/2019MNRAS.487.2685E} {487, 2685}
+
+\bibitem[\protect\citeauthoryear{{Gaia Collaboration} et~al.,}{{Gaia
+  Collaboration} et~al.}{2021}]{GaiaCollaboration_2021}
+{Gaia Collaboration} et~al., 2021, \mn@doi [\aap]
+  {10.1051/0004-6361/202039588}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021A&A...649A...7G} {649, A7}
+
+\bibitem[\protect\citeauthoryear{{Gardiner} \& {Noguchi}}{{Gardiner} \&
+  {Noguchi}}{1996}]{K15_Gardiner_Noguchi1996}
+{Gardiner} L.~T.,  {Noguchi} M.,  1996, \mn@doi [\mnras]
+  {10.1093/mnras/278.1.191}, \href
+  {https://ui.adsabs.harvard.edu/abs/1996MNRAS.278..191G} {278, 191}
+
+\bibitem[\protect\citeauthoryear{{Glatt} et~al.,}{{Glatt}
+  et~al.}{2008}]{M3_Glatt_et_al2008}
+{Glatt} K.,  et~al., 2008, \mn@doi [\aj] {10.1088/0004-6256/135/4/1106}, \href
+  {https://ui.adsabs.harvard.edu/abs/2008AJ....135.1106G} {135, 1106}
+
+\bibitem[\protect\citeauthoryear{{Glatt}, {Grebel}  \& {Koch}}{{Glatt}
+  et~al.}{2010}]{40Glatt_Grebel_Koch2010}
+{Glatt} K.,  {Grebel} E.~K.,   {Koch} A.,  2010, \mn@doi [\aap]
+  {10.1051/0004-6361/201014187}, \href
+  {https://ui.adsabs.harvard.edu/abs/2010A&A...517A..50G} {517, A50}
+
+\bibitem[\protect\citeauthoryear{{Grebel}, {Zaritsky}, {Harris}  \&
+  {Thompson}}{{Grebel} et~al.}{1999}]{27Grebel_et_al1999}
+{Grebel} E.~K.,  {Zaritsky} D.,  {Harris} J.,   {Thompson} I.,  1999, in {Chu}
+  Y.~H.,  {Suntzeff} N.,  {Hesser} J.,   {Bohlender} D.,  eds, ~ Vol. 190, New
+  Views of the Magellanic Clouds. p.~405
+
+\bibitem[\protect\citeauthoryear{Harris \& Zaritsky}{Harris \&
+  Zaritsky}{2004}]{20Harris_Zaritsky2004}
+Harris J.,  Zaritsky D.,  2004, \mn@doi [The Astronomical Journal]
+  {10.1086/381953}, 127, 1531–1544
+
+\bibitem[\protect\citeauthoryear{{Hill} \& {Zaritsky}}{{Hill} \&
+  {Zaritsky}}{2006}]{85Hill_Zaritsky2006}
+{Hill} A.,  {Zaritsky} D.,  2006, \mn@doi [\aj] {10.1086/498647}, \href
+  {https://ui.adsabs.harvard.edu/abs/2006AJ....131..414H} {131, 414}
+
+\bibitem[\protect\citeauthoryear{Hunter}{Hunter}{2007}]{matplotlibHunter:2007}
+Hunter J.~D.,  2007, \mn@doi [Computing in Science \& Engineering]
+  {10.1109/MCSE.2007.55}, 9, 90
+
+\bibitem[\protect\citeauthoryear{{Kamann} et~al.,}{{Kamann}
+  et~al.}{2020}]{K24_Kamann_et_al2020}
+{Kamann} S.,  et~al., 2020, \mn@doi [\mnras] {10.1093/mnras/stz3506}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020MNRAS.492..966K} {492, 966}
+
+\bibitem[\protect\citeauthoryear{{Keller}, {Mackey}  \& {Da Costa}}{{Keller}
+  et~al.}{2011}]{K19_Keller_Mackey_Da_Costa2011}
+{Keller} S.~C.,  {Mackey} A.~D.,   {Da Costa} G.~S.,  2011, \mn@doi [\apj]
+  {10.1088/0004-637X/731/1/22}, \href
+  {https://ui.adsabs.harvard.edu/abs/2011ApJ...731...22K} {731, 22}
+
+\bibitem[\protect\citeauthoryear{{Kennicutt}}{{Kennicutt}}{1998}]{K7_Kennicutt1998}
+{Kennicutt} Robert~C. J.,  1998, \mn@doi [\apj] {10.1086/305588}, \href
+  {https://ui.adsabs.harvard.edu/abs/1998ApJ...498..541K} {498, 541}
+
+\bibitem[\protect\citeauthoryear{{Knapen} \& {Querejeta}}{{Knapen} \&
+  {Querejeta}}{2015}]{23Knapen_Querejeta2015}
+{Knapen} J.,  {Querejeta} M.,  2015, \mn@doi [Galaxies]
+  {10.3390/galaxies3040220}, \href
+  {https://ui.adsabs.harvard.edu/abs/2015Galax...3..220K} {3, 220}
+
+\bibitem[\protect\citeauthoryear{{Kumai}, {Basu}  \& {Fujimoto}}{{Kumai}
+  et~al.}{1993}]{73Kumai_Basu_Fujimoto1993}
+{Kumai} Y.,  {Basu} B.,   {Fujimoto} M.,  1993, \mn@doi [\apj]
+  {10.1086/172265}, \href
+  {https://ui.adsabs.harvard.edu/abs/1993ApJ...404..144K} {404, 144}
+
+\bibitem[\protect\citeauthoryear{{Kuzma}, {Da Costa}  \& {Mackey}}{{Kuzma}
+  et~al.}{2018}]{M1_Kuzma_Da_costa_Mackey2018}
+{Kuzma} P.~B.,  {Da Costa} G.~S.,   {Mackey} A.~D.,  2018, \mn@doi [\mnras]
+  {10.1093/mnras/stx2353}, \href
+  {https://ui.adsabs.harvard.edu/abs/2018MNRAS.473.2881K} {473, 2881}
+
+\bibitem[\protect\citeauthoryear{{Lamers}, {Gieles}  \& {Portegies
+  Zwart}}{{Lamers} et~al.}{2005}]{K39_Lamers_Gieles_Portegies_Zwart2005}
+{Lamers} H.~J.~G.~L.~M.,  {Gieles} M.,   {Portegies Zwart} S.~F.,  2005,
+  \mn@doi [\aap] {10.1051/0004-6361:20041476}, \href
+  {https://ui.adsabs.harvard.edu/abs/2005A&A...429..173L} {429, 173}
+
+\bibitem[\protect\citeauthoryear{{Mackey} \& {Gilmore}}{{Mackey} \&
+  {Gilmore}}{2003}]{M2_Mackey_Gilmore2003}
+{Mackey} A.~D.,  {Gilmore} G.~F.,  2003, \mn@doi [\mnras]
+  {10.1046/j.1365-8711.2003.06022.x}, \href
+  {https://ui.adsabs.harvard.edu/abs/2003MNRAS.338..120M} {338, 120}
+
+\bibitem[\protect\citeauthoryear{{Mackey}, {Da Costa}, {Ferguson}  \&
+  {Yong}}{{Mackey} et~al.}{2013}]{K18_Mackey_et_al2013}
+{Mackey} A.~D.,  {Da Costa} G.~S.,  {Ferguson} A.~M.~N.,   {Yong} D.,  2013,
+  \mn@doi [\apj] {10.1088/0004-637X/762/1/65}, \href
+  {https://ui.adsabs.harvard.edu/abs/2013ApJ...762...65M} {762, 65}
+
+\bibitem[\protect\citeauthoryear{Maji, Zhu, Li, Charlton, Hernquist  \&
+  Knebe}{Maji et~al.}{2017}]{37Maji_et_al2017}
+Maji M.,  Zhu Q.,  Li Y.,  Charlton J.,  Hernquist L.,   Knebe A.,  2017,
+  \mn@doi [The Astrophysical Journal] {10.3847/1538-4357/aa7aa1}, 844, 108
+
+\bibitem[\protect\citeauthoryear{{Mapelli}}{{Mapelli}}{2017}]{K28_Mapelli2017}
+{Mapelli} M.,  2017, \mn@doi [\mnras] {10.1093/mnras/stx304}, \href
+  {https://ui.adsabs.harvard.edu/abs/2017MNRAS.467.3255M} {467, 3255}
+
+\bibitem[\protect\citeauthoryear{{Mastrobuono-Battisti} \&
+  {Perets}}{{Mastrobuono-Battisti} \&
+  {Perets}}{2016}]{K29_Mastrobuono_Battisti_Perets2016}
+{Mastrobuono-Battisti} A.,  {Perets} H.~B.,  2016, \mn@doi [\apj]
+  {10.3847/0004-637X/823/1/61}, \href
+  {https://ui.adsabs.harvard.edu/abs/2016ApJ...823...61M} {823, 61}
+
+\bibitem[\protect\citeauthoryear{{Mastropietro}, {Burkert}  \&
+  {Moore}}{{Mastropietro} et~al.}{2009}]{K16_Mastropietro_Burkert_Moore2009}
+{Mastropietro} C.,  {Burkert} A.,   {Moore} B.,  2009, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2009.15406.x}, \href
+  {https://ui.adsabs.harvard.edu/abs/2009MNRAS.399.2004M} {399, 2004}
+
+\bibitem[\protect\citeauthoryear{{McKenzie} \& {Bekki}}{{McKenzie} \&
+  {Bekki}}{2018}]{K34_McKenzie_Bekki2018}
+{McKenzie} M.,  {Bekki} K.,  2018, \mn@doi [\mnras] {10.1093/mnras/sty1557},
+  \href {https://ui.adsabs.harvard.edu/abs/2018MNRAS.479.3126M} {479, 3126}
+
+\bibitem[\protect\citeauthoryear{{McKenzie} \& {Bekki}}{{McKenzie} \&
+  {Bekki}}{2021a}]{K23_McKenzie_Bekki2021}
+{McKenzie} M.,  {Bekki} K.,  2021a, \mn@doi [\mnras] {10.1093/mnras/staa3376},
+  \href {https://ui.adsabs.harvard.edu/abs/2021MNRAS.500.4578M} {500, 4578}
+
+\bibitem[\protect\citeauthoryear{{McKenzie} \& {Bekki}}{{McKenzie} \&
+  {Bekki}}{2021b}]{M7_McKenzie_Bekki_2021}
+{McKenzie} M.,  {Bekki} K.,  2021b, \mn@doi [\mnras] {10.1093/mnras/stab2171},
+  \href {https://ui.adsabs.harvard.edu/abs/2021MNRAS.507..834M} {507, 834}
+
+\bibitem[\protect\citeauthoryear{{Miyamoto} \& {Nagai}}{{Miyamoto} \&
+  {Nagai}}{1975}]{K17_Miyamoto_Nagai1975}
+{Miyamoto} M.,  {Nagai} R.,  1975, \pasj, \href
+  {https://ui.adsabs.harvard.edu/abs/1975PASJ...27..533M} {27, 533}
+
+\bibitem[\protect\citeauthoryear{{Murai} \& {Fujimoto}}{{Murai} \&
+  {Fujimoto}}{1980}]{78Murai_Fujimoto1980}
+{Murai} T.,  {Fujimoto} M.,  1980, \pasj, \href
+  {https://ui.adsabs.harvard.edu/abs/1980PASJ...32..581M} {32, 581}
+
+\bibitem[\protect\citeauthoryear{{Navarro}, {Frenk}  \& {White}}{{Navarro}
+  et~al.}{1996}]{K4_Navarro_Frenk_White1996}
+{Navarro} J.~F.,  {Frenk} C.~S.,   {White} S. D.~M.,  1996, \mn@doi [\apj]
+  {10.1086/177173}, \href
+  {https://ui.adsabs.harvard.edu/abs/1996ApJ...462..563N} {462, 563}
+
+\bibitem[\protect\citeauthoryear{{Nayak}, {Subramaniam}, {Choudhury}  \&
+  {Sagar}}{{Nayak} et~al.}{2018}]{39Nayak_et_al2018}
+{Nayak} P.~K.,  {Subramaniam} A.,  {Choudhury} S.,   {Sagar} R.,  2018, \mn@doi
+  [\aap] {10.1051/0004-6361/201732227}, \href
+  {https://ui.adsabs.harvard.edu/abs/2018A&A...616A.187N} {616, A187}
+
+\bibitem[\protect\citeauthoryear{{Olsen}, {Zaritsky}, {Blum}, {Boyer}  \&
+  {Gordon}}{{Olsen} et~al.}{2011}]{18Olsen_et_al2011}
+{Olsen} K. A.~G.,  {Zaritsky} D.,  {Blum} R.~D.,  {Boyer} M.~L.,   {Gordon}
+  K.~D.,  2011, \mn@doi [\apj] {10.1088/0004-637X/737/1/29}, \href
+  {https://ui.adsabs.harvard.edu/abs/2011ApJ...737...29O} {737, 29}
+
+\bibitem[\protect\citeauthoryear{Osman, Bekki  \& Cortese}{Osman
+  et~al.}{2020}]{K10_Osman_Bekki_Cortese2020}
+Osman O.,  Bekki K.,   Cortese L.,  2020, \mn@doi [Monthly Notices of the Royal
+  Astronomical Society] {10.1093/mnras/staa1554}, 497, 2002–2017
+
+\bibitem[\protect\citeauthoryear{{Pardy}, {D'Onghia}  \& {Fox}}{{Pardy}
+  et~al.}{2018}]{89Pardy_DOnghia_Fox2018}
+{Pardy} S.~A.,  {D'Onghia} E.,   {Fox} A.~J.,  2018, \mn@doi [\apj]
+  {10.3847/1538-4357/aab95b}, \href
+  {https://ui.adsabs.harvard.edu/abs/2018ApJ...857..101P} {857, 101}
+
+\bibitem[\protect\citeauthoryear{{Parisi} et~al.,}{{Parisi}
+  et~al.}{2015}]{K37_Parisi_et_al2015}
+{Parisi} M.~C.,  et~al., 2015, in {Points} S.,  {Kunder} A.,  eds,
+  Astronomical Society of the Pacific Conference Series Vol. 491, Fifty Years
+  of Wide Field Studies in the Southern Hemisphere: Resolved Stellar
+  Populations of the Galactic Bulge and Magellanic Clouds. p.~241
+
+\bibitem[\protect\citeauthoryear{{Parmentier}, {de Grijs}  \&
+  {Gilmore}}{{Parmentier} et~al.}{2003}]{3Parmentier_de_Grijs_Gilmore2003}
+{Parmentier} G.,  {de Grijs} R.,   {Gilmore} G.,  2003, \mn@doi [\mnras]
+  {10.1046/j.1365-8711.2003.06530.x}, \href
+  {https://ui.adsabs.harvard.edu/abs/2003MNRAS.342..208P} {342, 208}
+
+\bibitem[\protect\citeauthoryear{{Patel} et~al.,}{{Patel}
+  et~al.}{2020}]{M9_Patel_et_al2020}
+{Patel} E.,  et~al., 2020, \mn@doi [\apj] {10.3847/1538-4357/ab7b75}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020ApJ...893..121P} {893, 121}
+
+\bibitem[\protect\citeauthoryear{{Pe{\~n}arrubia}, {G{\'o}mez}, {Besla},
+  {Erkal}  \& {Ma}}{{Pe{\~n}arrubia} et~al.}{2016}]{R3Pernarrubia_et_al2016}
+{Pe{\~n}arrubia} J.,  {G{\'o}mez} F.~A.,  {Besla} G.,  {Erkal} D.,   {Ma}
+  Y.-Z.,  2016, \mn@doi [\mnras] {10.1093/mnrasl/slv160}, \href
+  {https://ui.adsabs.harvard.edu/abs/2016MNRAS.456L..54P} {456, L54}
+
+\bibitem[\protect\citeauthoryear{{Perren}, {Piatti}  \& {V{\'a}zquez}}{{Perren}
+  et~al.}{2017}]{56Perren_Piatti_V2017}
+{Perren} G.~I.,  {Piatti} A.~E.,   {V{\'a}zquez} R.~A.,  2017, \mn@doi [\aap]
+  {10.1051/0004-6361/201629520}, \href
+  {https://ui.adsabs.harvard.edu/abs/2017A&A...602A..89P} {602, A89}
+
+\bibitem[\protect\citeauthoryear{{Piatti}}{{Piatti}}{2020}]{53Piatti2020}
+{Piatti} A.~E.,  2020, arXiv e-prints, \href
+  {https://ui.adsabs.harvard.edu/abs/2020arXiv201212628P} {p. arXiv:2012.12628}
+
+\bibitem[\protect\citeauthoryear{{Piatti}}{{Piatti}}{2021}]{52Piatti2021}
+{Piatti} A.~E.,  2021, arXiv e-prints, \href
+  {https://ui.adsabs.harvard.edu/abs/2021arXiv210103157P} {p. arXiv:2101.03157}
+
+\bibitem[\protect\citeauthoryear{{Piatti}, {Geisler}, {Sarajedini}, {Gallart}
+  \& {Wischnjewsky}}{{Piatti} et~al.}{2008}]{64Piatti_et_al2008}
+{Piatti} A.~E.,  {Geisler} D.,  {Sarajedini} A.,  {Gallart} C.,
+  {Wischnjewsky} M.,  2008, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2008.13593.x}, \href
+  {https://ui.adsabs.harvard.edu/abs/2008MNRAS.389..429P} {389, 429}
+
+\bibitem[\protect\citeauthoryear{{Rafelski} \& {Zaritsky}}{{Rafelski} \&
+  {Zaritsky}}{2005}]{1Rafelski_Zaritsky2005}
+{Rafelski} M.,  {Zaritsky} D.,  2005, \mn@doi [\aj] {10.1086/424938}, \href
+  {https://ui.adsabs.harvard.edu/abs/2005AJ....129.2701R} {129, 2701}
+
+\bibitem[\protect\citeauthoryear{{Santos} Jo{\~a}o F.~C. et~al.,}{{Santos}
+  et~al.}{2020}]{K38_Santos_et_al2020}
+{Santos} Jo{\~a}o F.~C. J.,  et~al., 2020, \mn@doi [\mnras]
+  {10.1093/mnras/staa2425}, \href
+  {https://ui.adsabs.harvard.edu/abs/2020MNRAS.498..205S} {498, 205}
+
+\bibitem[\protect\citeauthoryear{{Sawa}, {Fujimoto}  \& {Kumai}}{{Sawa}
+  et~al.}{1999}]{67Sawa_Fujimoto_Kumai1999}
+{Sawa} T.,  {Fujimoto} M.,   {Kumai} Y.,  1999, in {Chu} Y.~H.,  {Suntzeff} N.,
+   {Hesser} J.,   {Bohlender} D.,  eds,  Vol. 190, New Views of the Magellanic
+  Clouds. p.~499
+
+\bibitem[\protect\citeauthoryear{{Szigeti}, {M{\'e}sz{\'a}ros}, {Szab{\'o}},
+  {Fern{\'a}ndez-Trincado}, {Lane}  \& {Cohen}}{{Szigeti}
+  et~al.}{2021}]{K25_Szigeti_et_al2021}
+{Szigeti} L.,  {M{\'e}sz{\'a}ros} S.,  {Szab{\'o}} G.~M.,
+  {Fern{\'a}ndez-Trincado} J.~G.,  {Lane} R.~R.,   {Cohen} R.~E.,  2021,
+  \mn@doi [\mnras] {10.1093/mnras/stab1007}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.1144S} {504, 1144}
+
+\bibitem[\protect\citeauthoryear{{Tsuge} et~al.,}{{Tsuge}
+  et~al.}{2019}]{K36_Tsuge_et_al2019}
+{Tsuge} K.,  et~al., 2019, \mn@doi [\apj] {10.3847/1538-4357/aaf4fb}, \href
+  {https://ui.adsabs.harvard.edu/abs/2019ApJ...871...44T} {871, 44}
+
+\bibitem[\protect\citeauthoryear{{Tsujimoto}, {Nomoto}, {Yoshii}, {Hashimoto},
+  {Yanagida}  \& {Thielemann}}{{Tsujimoto}
+  et~al.}{1995}]{K8_Tsujimoto_et_al1995}
+{Tsujimoto} T.,  {Nomoto} K.,  {Yoshii} Y.,  {Hashimoto} M.,  {Yanagida} S.,
+  {Thielemann} F.~K.,  1995, \mn@doi [\mnras] {10.1093/mnras/277.3.945}, \href
+  {https://ui.adsabs.harvard.edu/abs/1995MNRAS.277..945T} {277, 945}
+
+\bibitem[\protect\citeauthoryear{Van Der~Walt, Colbert  \& Varoquaux}{Van
+  Der~Walt et~al.}{2011}]{van2011numpy}
+Van Der~Walt S.,  Colbert S.~C.,   Varoquaux G.,  2011, Computing in Science \&
+  Engineering, 13, 22
+
+\bibitem[\protect\citeauthoryear{{Vesperini}, {Hong}, {Giersz}  \&
+  {Hypki}}{{Vesperini} et~al.}{2021}]{K30_Vesperini_et_al2021}
+{Vesperini} E.,  {Hong} J.,  {Giersz} M.,   {Hypki} A.,  2021, \mn@doi [\mnras]
+  {10.1093/mnras/stab223}, \href
+  {https://ui.adsabs.harvard.edu/abs/2021MNRAS.502.4290V} {502, 4290}
+
+\bibitem[\protect\citeauthoryear{{Virtanen} et~al.,}{{Virtanen}
+  et~al.}{2020}]{2020SciPy-NMeth}
+{Virtanen} P.,  et~al., 2020, \mn@doi [Nature Methods]
+  {https://doi.org/10.1038/s41592-019-0686-2}, \href {https://rdcu.be/b08Wh}
+  {17, 261}
+
+\bibitem[\protect\citeauthoryear{{Weinberg}}{{Weinberg}}{2000}]{K12_Weinberg2000}
+{Weinberg} M.~D.,  2000, \mn@doi [\apj] {10.1086/308600}, \href
+  {https://ui.adsabs.harvard.edu/abs/2000ApJ...532..922W} {532, 922}
+
+\bibitem[\protect\citeauthoryear{{Westerlund}}{{Westerlund}}{1997}]{K11_Westerlund1997}
+{Westerlund} B.~E.,  1997, {The Magellanic Clouds}
+
+\bibitem[\protect\citeauthoryear{{Yoshizawa} \& {Noguchi}}{{Yoshizawa} \&
+  {Noguchi}}{2003}]{69Yoshizawa_Noguchi2003}
+{Yoshizawa} A.~M.,  {Noguchi} M.,  2003, \mn@doi [\mnras]
+  {10.1046/j.1365-8711.2003.06263.x}, \href
+  {https://ui.adsabs.harvard.edu/abs/2003MNRAS.339.1135Y} {339, 1135}
+
+\bibitem[\protect\citeauthoryear{{Zivick} et~al.,}{{Zivick}
+  et~al.}{2019}]{24Zivick_et_al2019}
+{Zivick} P.,  et~al., 2019, \mn@doi [\apj] {10.3847/1538-4357/ab0554}, \href
+  {https://ui.adsabs.harvard.edu/abs/2019ApJ...874...78Z} {874, 78}
+
+\bibitem[\protect\citeauthoryear{{van den Hoek} \& {Groenewegen}}{{van den
+  Hoek} \& {Groenewegen}}{1997}]{K9_Van_den_hoek_Groenewegen1997}
+{van den Hoek} L.~B.,  {Groenewegen} M.~A.~T.,  1997, \mn@doi [\aaps]
+  {10.1051/aas:1997162}, \href
+  {https://ui.adsabs.harvard.edu/abs/1997A&AS..123..305V} {123, 305}
+
+\makeatother
+\end{thebibliography}

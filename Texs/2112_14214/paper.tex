@@ -1,0 +1,323 @@
+% mnras_template.tex 
+\documentclass[fleqn,usenatbib]{mnras}
+
+% MNRAS is set in Times font. If you don't have this installed (most LaTeX
+% installations will be fine) or prefer the old Computer Modern fonts, comment
+% out the following linehttps://www.overleaf.com/project/5f3311dbac706300018f069a
+%%%%%%%%%\usepackage{newtxtext,newtxmath}
+% Depending on your LaTeX fonts installation, you might get better results with one of these:
+%\usepackage{mathptmx}https://www.overleaf.com/project/5f3311dbac706300018f069a
+%\usepackage{txfonts}
+
+% Use vector fonts, so it zooms properly in on-screen viewing software
+% Don't change these lines unless you know what you are doinghttps://www.overleaf.com/project/5f3311dbac706300018f069a
+\usepackage[T1]{fontenc}
+
+% Allow "Thomas van Noord" and "Simon de Laguarde" and alike to be sorted by "N" and "L" etc. in the bibliography.
+% Write the name in the bibliography as "\VAN{Noord}{Van}{van} Noord, Thomas"
+\DeclareRobustCommand{\VAN}[3]{#2}
+\let\VANthebibliography\thebibliography
+\def\thebibliography{\DeclareRobustCommand{\VAN}[3]{##3}\VANthebibliography}
+
+
+%%%%% AUTHORS - PLACE YOUR OWN PACKAGES HERE %%%%%
+\usepackage{graphicx}	% Including figure files
+\usepackage{amsmath}	% Advanced maths commandshttps://www.overleaf.com/project/5f3311dbac706300018f069a
+\usepackage{amssymb}	% Extra maths symbols
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{subfig}
+
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+
+% changes made by CB
+\usepackage[dvipsnames]{xcolor}
+\newcommand{\cb}[1]{\textcolor{Magenta}{#1}}
+
+\usepackage{xcolor,colortbl}
+\definecolor{Gray}{gray}{0.85}
+
+\newcolumntype{a}{>{\columncolor{Gray}}c}
+%%%%%\newcolumntype{b}{>{\columncolor{white}}c}
+%%...%%
+
+\usepackage{newtxtext,newtxmath}
+
+\title[eccentricity influences the pebble isolation mass]{How the planetary eccentricity influences the pebble isolation mass}
+
+\author[Chametla et al.]{
+Raúl O. Chametla,$^{1,2}$\thanks{E-mail: raul@icf.unam.mx (ROC)}
+Frédéric S. Masset,$^{2,3}$
+Clément Baruteau$^{4}$ and 
+Bertram Bitsch$^{5}$
+\\
+$^{1}$Charles University, Faculty of Mathematics and Physics, Astronomical Institute, V Hole$\check{s}$ovi$\check{c}$k\'ach 747/2, 180 00 Prague 8, Czech Republic\\
+$^{2}$Instituto de Ciencias F\'isicas, Universidad Nacional Autonoma de M\'exico, Av. Universidad s/n, 62210 Cuernavaca, Mor., Mexico\\
+$^{3}$University Nice-Sophia Antipolis, CNRS, Observatoire de la C\^ote d'Azur, Laboratoire LAGRANGE, CS 34229. 06304 Nice Cedex 4, France\\
+$^{4}$IRAP, Universit\'e de Toulouse, CNRS, UPS, F-31400 Toulouse, France\\
+$^{5}$Max-Planck-Institut für Astronomie, Königstuhl 17, 69117 Heidelberg, Germany\\
+}
+
+% These dates will be filled out by the publisher
+\date{Accepted XXX. Received YYY; in original form ZZZ}
+
+% Enter the current year, for the copyright statements etc.
+\pubyear{2021}
+
+% Don't change these lines
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+% Abstract of the paper
+\begin{abstract}  % 237 words, upper limit is 250
+We investigate the pebble isolation mass for a planet on a fixed eccentric orbit in its protoplanetary disc by conducting a set of 2D hydrodynamical simulations including dust turbulent diffusion. A range of planet eccentricities up to $e=0.2$ is adopted. Our simulations also cover a range of $\alpha-$turbulent viscosities, and for each pair $\{\alpha,e\}$ the pebble isolation mass is estimated as the minimum planet mass in our simulations such that solids with a Stokes number $\gtrsim 0.05$ do not flow across the planet orbit and remain trapped around a pressure bump outside the planet gap. For $\alpha<10^{-3}$, we find that eccentric planets reach a well-defined pebble isolation mass, which can be smaller than for planets on circular orbits when the eccentricity remains smaller than the disc's aspect ratio. We provide a fitting formula for how the pebble isolation mass depends on planet eccentricity. However, for $\alpha > 10^{-3}$, eccentric planets cannot fully stall the pebbles flow, and thus do not reach a well-defined pebble isolation mass. Our results suggest that the maximum mass reached by rocky cores should exhibit a dichotomy depending on the disc turbulent viscosity. While being limited to ${\cal O}(10\,M_\oplus)$ in low-viscosity discs, this maximum mass could reach much larger values in discs with a high turbulent viscosity in the planet vicinity. Our results further highlight that pebble filtering by growing planets might not be as effective as previously thought, especially in high-viscosity discs, with important implications to protoplanetary discs observations.
+\end{abstract}
+
+% Select between one and six entries from the list of approved keywords.
+% Don't make up new ones.
+\begin{keywords}
+accretion -- planet-disc interactions -- protoplanetary discs
+\end{keywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% BODY OF PAPER %%%%%%%%%%%%%%%%%%
+
+
+\begin{table*}
+\caption{Initial conditions and main parameters of our simulations ($a_{\rm p}$ denotes the planet's fixed semi-major axis).}
+    \label{tab:parameters}
+\begin{tabular}{ p{8.5cm}||p{8.5cm}  }
+ %\hline
+ %\multicolumn{2}{c}{\rowcolor{Gray}Numerical set-up} \\
+ \hline
+ GAS & DUST\\
+ \hline
+ Aspect ratio \hspace{2.9
+ cm}        $h$  \hfill 0.04& Dust size \hspace{3.3cm} $s\mathrm{[mm]}$  \hfill  $[1-300]$\\
+ $\alpha$-turbulent viscosity \hspace{1.85cm} $\alpha$  \hfill  $[10^{-4}-10^{-2}]$& Internal density of particles \hspace{1.25cm} $\mathit{\rho_{\rm p}\mathrm{[g/cm^3]}}$  \hfill  2 \\
+ Mass of the central star \hspace{1.6cm} $M_{\star}[M_{\odot}]$  \hfill  1.0&  Number of dust particles \hspace{1.5cm} $N_{\rm p}$  \hfill  50 000  \\
+Number of cells in radius \hspace{1.35cm}           $N_r$  \hfill    384& Size distribution \hspace{2.4cm} $n(s)$  \hfill  $\propto s^{-1}$ \\
+Number of cells in azimuth \hspace{1.15cm}           $N_{\varphi}$  \hfill    1206& Stokes number \hspace{2.6cm} $St$  \hfill  $[3\times10^{-4}-0.2]$   \\
+ Radial extent of the grid \hspace{1.5cm}           $r[a_{\rm p}]$  \hfill    [0.5-2.5]& Dust turbulent diffusivity  \hspace{1.45cm}           $D_d$  \hfill    $\nu\dfrac{1+4St^2}{(1+St^2)^2}$ \\
+Azimuthal extent of the grid \hspace{1.05cm}           $\varphi$  \hfill    [$0-2\pi]$&  \\
+ Surface density at $a_{\rm p}$ \hspace{1.9cm}           $\Sigma[\mathrm{g/cm^2}]$  \hfill    900&   \\
+ Surface density slope \hspace{1.85cm}           $\sigma$  \hfill    -1/2&   \\
+ Temperature slope \hspace{2.2cm}           $\beta$  \hfill    -1&   \\
+ %Toomre parameter \hspace{2.15cm}           $Q$  \hfill    $\approx25$&   \\
+ \hline
+\end{tabular}
+\end{table*}
+
+%================================================
+\section{Introduction}
+%================================================
+Planets beyond a few Earth masses can generate a partial gap around their orbit in the disc of gas and dust in which they form. Depending on the disc's temperature and turbulent viscosity, a pressure bump can build up at the outer edge of this gap \citep[e.g.,][]{Crida_etal2006,2006A&A...459L..17P,2015ApJ...807L..11D}. Several studies have shown that for a planet on a circular orbit, this pressure bump can act as a barrier against the radial drift of solids marginally coupled to the disc gas, thereby halting their accretion on the planet \citep{2012A&A...546A..18M,Lambrechts_etal2014,2014A&A...572A.107L,2017AJ....153..222B,Ataiee_etal2018,Bitsch_etal2018}. Such solids have a size comparable to that of pebbles, and the critical mass that a planet needs to reach before it gets completely isolated from surrounding pebbles in the disc is called the pebble isolation mass (PIM).
+
+Since the PIM depends on the effective trapping of pebbles around a pressure bump outside the planet orbit, previous studies have examined its dependence on the aspect ratio $h$ and the $\alpha$ turbulent viscosity of the disc gas, as well as on the Stokes number ($St$) of the solids. The effect of the planet eccentricity ($e$) on the PIM has not been previously addressed, which is yet of importance for planet formation and evolution models \citep[][]{PMID:26289203,2019A&A...627A..83L,2019A&A...623A..88B,2020A&A...643A..66B,2021A&A...650A.116M,Izidoro21}. It also has a strong observational motivation. While the mass distribution of planets in observed close-in planetary systems could be accounted for by the disc's thermal mass \citep[][]{2019ApJ...874...91W} or the PIM \citep[][]{2019A&A...630A..51B}, most of these planets actually have slightly eccentric orbits \citep[][]{2011arXiv1109.2497M,2011ApJS..197....8L,2012ApJ...758...39J,2012ApJ...761...92F,2016PNAS..11311431X,2018ApJ...860..101Z} which naturally leads to wonder whether and how the PIM differs for eccentric planets. For a protoplanetary core on an eccentric orbit, \citet{LO2018} found that the pebble accretion efficiency first increases with $e$ once $e$ becomes of the order the absolute value of the dimensionless radial pressure gradient $\abs{\eta} = (h^2/2) \abs{ \partial\log P / \partial\log r }$. However, when $e$ exceeds a few percent typically, that is of order $h$, the high relative velocity between the planet and pebbles precludes pebble accretion, whose efficiency drops quickly. 
+
+Although previous studies have shown that the eccentricity of a planet can be dampened by the interactions with the gas disc \citep[][]{2008A&A...482..677C,2010A&A...523A..30B}, several mechanisms can grow and maintain a substantial level of eccentricity for planets that are still embedded in their protoplanetary disc. Before they reach their PIM, low-mass accreting planets can acquire an eccentricity comparable to the disc's aspect ratio if their luminosity (which results from the heat release due to solids accretion) exceeds a critical value \citep[][]{2017MNRAS.469..206E,Chrenko2017,2019MNRAS.485.5035F,2021MNRAS.tmp.3059R}. Eccentricity growth can also arise from gravitational interactions with another planet companion, and a large range of eccentricities can be obtained depending on the planets mass, their mutual separation, and the disc's physical properties like its density and temperature (see, e.g., \citealp{Kley04} and \citealp{Pierens08} for resonant interactions in different regimes of planet masses). While giant planets on circular orbits have a mass largely beyond the PIM, this might not be the case, as we will see, when such planets are on eccentric orbits. Single massive planets, typically above a Jupiter mass, can experience eccentricity growth due to the dominance of eccentric resonances in the disc-planet interaction, particularly when the planet is in a low-density environment like a gas cavity \citep[e.g.,][]{2001A&A...366..263P,2006A&A...447..369K,2006ApJ...652.1698D,2013A&A...555A.124B,Debras21}. For instance, the simulation of \citet{Baruteau2021} shows that a 2 Jupiter mass planet around a 2 Solar-mass star can reach and maintain an eccentricity $\sim$0.25 after migrating into a low-density gas cavity in a few Myr (see their figure 1). Moreover, planets eccentricity can be grown and maintained via the interaction between the planet and a distant vortex, as shown in Chametla $\&$ Chrenko (submitted).
+
+With all this in mind, we revisit in this study the pebble isolation mass in a protoplanetary disc by considering planets with eccentricities between 0 and 0.2, using a disc model very similar to that of \citet{Ataiee_etal2018}, who studied the pebble isolation mass in 2D hydrodynamical simulations including solid particles for planets on circular orbits. The planet's eccentricity is fixed in a given simulation, and we do not assume one particular mechanism behind the growth and maintenance of the eccentricity. The paper is organized as follows. In Section \ref{sec:model} we present the physical model and numerical setup used in our 2D gas and dust hydrodynamical simulations. In Section \ref{sec:previously} we present a brief summary of the results of two previous studies on the isolation mass for planets on circular orbits. We present our results in Section \ref{sec:results}, followed by Section~\ref{sec:fit} in which we introduce a fitting formula for the pebble isolation mass of eccentric planets. Concluding remarks can be found in Section \ref{sec:conclusion}.
+
+
+%================================================
+\section{Physical Model and numerical setup}
+\label{sec:model}
+%================================================
+We have carried out two-dimensional (2D) hydrodynamical simulations to model the evolution of the gas and dust in protoplanetary discs harboring planets on eccentric orbits. Apart from the planet eccentricity, the physical model and numerical setup used in this study basically follow those in \citet{Ataiee_etal2018}, which we briefly recall for convenience. The simulations use the code Dusty FARGO-ADSG, which is an extended version of the original 2D FARGO code \citep[][]{Masset2000} that includes Lagrangian dust particles \citep{BZ2016}.
+
+For the gas, the continuity and Navier-Stokes equations are solved on a polar grid centred on to the star, and in a frame co-rotating with the planet. For simplicity, a locally isothermal equation of state is used with the vertically integrated gas pressure $P$ and the isothermal sound speed $c_{\rm s}$ satisfying $P=\Sigma c_{\rm s}^2$, with $c_{\rm s}$ kept stationary. We also note that the inclusion of an energy equation in \citet{Bitsch_etal2018} does not change significantly the PIM in their simulations. The source terms in the Navier-Stokes equation include the gravitational potential due to the star, the planet and the indirect terms arising from the stellar acceleration imparted by the disc gas and the planet. In the planet potential, a softening length $\epsilon=0.4H(r_{\rm p})$ is included to mimic the effects of finite vertical thickness, with $H$ the disc's pressure scale height and $r_{\rm p}$ the planet's orbital radius. A viscous acceleration is also included with a turbulent kinematic viscosity ($\nu$) that is expressed in terms of a dimensionless alpha parameter ($\nu = \alpha c_{\rm s}H)$. The initial radial profiles of the surface density and temperature are power-law functions with exponents $\sigma$ and $\beta$, respectively. 
+
+On the other hand, the dust (or solids) in the disc are modelled as Lagrangian test particles in our simulations. The gas drag acceleration is accounted for, so is dust turbulent diffusion via stochastic kicks on the particles position (see Section 2.1 in \citealp{Ataiee_etal2018} for more details). The dust drag acceleration on the gas is, however, discarded. Table~\ref{tab:parameters} summarizes the set of disc parameters and initial conditions used in our simulations. We recall that the Stokes number of the solid particles is the ratio between the stopping time (i.e., the time particles need to adjust to the gas flow due to drag forces) and the dynamical time. In the Epstein regime, which is relevant to our disc model, it can be expressed as $St=\pi s\rho_{\rm p}/(2 \Sigma)$, where $s$ and $\rho_{\rm p}$ are the size and internal density of the dust particles, respectively.
+
+For the boundary conditions, we use radial damping boundaries to avoid reflections of the planet wakes near the radial edges of the grid in the same way as described in \citet{deVal_etal2006}. The planet mass is gradually increased over the first five orbits of the simulations to avoid artefacts due to the instantaneous insertion of the planet in the disc. Before inserting the dust particles beyond the planet orbit in the disc, we first evolve the gas disc over 1000 to 6000 planet orbits depending on the disc viscosity, to achieve a steady state. We subsequently let the dust evolve in the disc for up to 3 times the duration of the preliminary simulations, which we find necessary to ascertain whether solid particles with $St>0.05$ get effectively trapped or not beyond the planet orbit. The main differences between our setup and that in \citet{Ataiee_etal2018} are in the number of grid cells and the total duration of the simulations.
+
+
+%================================================
+\section{Summary of previous results on the pebble isolation mass for circular planets}
+\label{sec:previously}
+%================================================
+\citet{Ataiee_etal2018} estimated the PIM for circular planets via a semi-analytical calculation using the analytical gap density profile of \citet{2015ApJ...807L..11D}. Their PIM, which takes the following expression,
+%
+\begin{equation}
+\frac{M_{\mathrm{PIM}}}{M_{\star}}\approx h^3\sqrt{37.3\alpha+0.01}\times \left[1+0.2\left(\frac{\sqrt{\alpha}}{h}\sqrt{\frac{1}{St^2}+4}\right)^{0.7}\right],
+ \label{eq:Ataiee}
+\end{equation}
+%
+\noindent was checked against 2D gas and dust hydrodynamical simulations with a setup that is very similar to that used in the present study. A good agreement was found, except at large turbulent viscosities for which the effective PIM found in their simulations was up to a factor $\sim$3 larger than predicted by Eq.~(\ref{eq:Ataiee}) for $\alpha=10^{-2}$ (see Figure 8 in \citealp{Ataiee_etal2018}).
+
+By means of 3D hydrodynamical simulations, \citet{Bitsch_etal2018} found a PIM that could be expressed as (see Eq. A6 in \citealp{Ataiee_etal2018})
+%
+\begin{equation}
+M_{\mathrm{PIM}} \approx 25f_{\mathrm{fit}}M_{\oplus} \times \left(1 + 4.2\frac{\alpha}{St}\right),
+ \label{eq:B+2018_0}
+\end{equation}
+%
+with
+%
+\begin{equation}
+f_{\mathrm{fit}}=\left[\frac{h}{0.05}\right]^3\left[0.34\left(\frac{\log(\alpha_3)}{\log(\alpha)}\right)^4+0.66\right]\left[1-\frac{\frac{\partial \ln P}{\partial \ln r}+2.5}{6}\right]
+ \label{eq:B+2018_1}
+\end{equation}
+%
+and $\alpha_3=10^{-3}$. A detailed comparison between Eqs.~(\ref{eq:Ataiee}) and~(\ref{eq:B+2018_0}) can be found in appendix A of \citet{Ataiee_etal2018}.
+
+
+%================================================
+\section{Results of hydrodynamical simulations}
+\label{sec:results}
+%================================================
+Following \citet{Ataiee_etal2018}, we consider that a planet has reached its PIM when no solids with a Stokes number $\gtrsim 0.05$ can flow through the planet orbit, being effectively trapped around the pressure bump outside the planet gap. As long as $\alpha\leq10^{-3}$, we find that this numerical criterion can be satisfied across the range of eccentricities that we have explored. However, for larger viscosities, we find that there are always solids with $St \gtrsim 0.05$ that can cross the planet orbit when it is eccentric (and only when it is eccentric). For such large viscosities, the flux of $St>0.05$ particles leaving the pressure bump and flowing through the planet orbit, which we now simply refer to as the pebbles flux, first decreases with increasing planet mass (as expected), and then stays approximately the same when further increasing planet mass. This is illustrated in Fig.~\ref{fig:criterion}, which shows the relative difference between 1000 and 2000 planet orbits of the number of solid particles with $St >0.05$ that stay beyond the planet orbit, and which can be seen as a measure of the pebbles flux.
+
+%FFFFFFFFFFFFFFFF
+\begin{figure}
+	\includegraphics[scale=0.5]{Permeability_new.pdf}
+    \caption{Relative difference between $t_1 = 1000$ and $t_2 = 2000$ orbits of the number of solid particles with $St >0.05$ that stay beyond the planet orbit, as a function of planet mass. Results are obtained for $e=0.2$, and for $\alpha = 10^{-3}$ (green) or $\alpha = 2\times 10^{-3}$ (red).}
+    \label{fig:criterion}
+\end{figure}
+%FFFFFFFFFFFFFFFF
+Reaching or not the PIM depends on how large the remaining pebbles flux is or, said differently, how efficient the planet filtration is. Since our simulations do not use a realistic particles size distribution (see Table~\ref{tab:parameters}), defining a quantitative criterion for when a planet reaches its PIM can be a little arbitrary. In the end, we consider that the PIM is reached when the pebbles flux does not increase with increasing planet mass over $10M_\oplus$ from the first planet mass for which the pebbles flux reaches a near minimum. This criterion is highlighted in Fig.~\ref{fig:criterion}.
+For $\alpha=0.001$ and $e=0.2$ (green), we see that the pebbles flux decreases from about 27$M_\oplus$ to $40M_\oplus$, where it becomes near zero. In that case, we consider that the planet reaches its PIM and that the latter is $40M_\oplus$. However, for $\alpha=0.002$ and $e=0.2$, the pebbles flux continuously increases from about 54$M_\oplus$ to $90M_\oplus$, so we consider that the planet does not strictly reach its PIM. An approximate PIM can still be inferred, which in that case we consider equal to $90M_\oplus$.
+
+Having refined the criterion for when a planet reaches its PIM, we show in Fig.~\ref{fig:ecc} the PIM (hereafter, $M_p^{\bullet}$) inferred from our hydrodynamical simulations for different planet eccentricities. We distinguish the results for $\alpha\leq10^{-3}$, which are shown by dashed curves and for which a well-defined PIM is found, from those for $\alpha\geq2\times10^{-3}$, which are shown by X symbols, and for which we find only an approximate PIM when the planet eccentricity is not zero. 
+% FFFFFFFFFFFFFFF
+\begin{figure*}
+	\includegraphics[scale=0.65]{e_vs_Mp_newfit_last.pdf}
+    \caption{Pebble isolation mass $M_p^{\bullet}$ versus eccentricity $e$ for six values of the $\alpha$ turbulent viscosity. The disc aspect ratio $h$ is fixed to 0.04 and the Stokes number $St$ to 0.05. Only for $\alpha \leq 10^{-3}$ do we find a well-defined PIM for all eccentricities, and we show by solid curves the predictions of our fitting formula given by Eq.~(\ref{eq:IMEP}). Otherwise, we show by X symbols approximate values of the PIM for which there is still pebbles flowing through the planet orbit.
+    }
+    \label{fig:ecc}
+\end{figure*}
+% FFFFFFFFFFFFFFF
+
+
+% FFFFFFFFFFFFFFF
+\begin{figure*}
+	\includegraphics[scale=0.6]{IMEP_dens_dust.png}
+    \caption{Results of simulations for $e=0.2$ and $\alpha\leq10^{-3}$, when the planet reaches its pebble isolation mass (the planet mass is, from top to bottom, $M_p=8M_{\oplus}$, $M_p=20M_{\oplus}$ and $M_p=40M_{\oplus}$). \textit{Left}: gas surface density with the position of the solid particles overplotted by coloured dots.  \textit{Right}: Stokes number of the solid particles versus orbital radius $r$ and particles size.
+    }
+    \label{fig:r_vs_St_IMEP}
+\end{figure*}
+% FFFFFFFFFFFFFFF
+% FFFFFFFFFFFFFFF
+\begin{figure*}
+	\includegraphics[scale=0.6]{IMEP_dens_dust2.png}
+    \caption{Continuation of Fig.~\ref{fig:r_vs_St_IMEP} for $\alpha>10^{-3}$, i.e., for the cases where the planet does not strictly reach an isolation mass in terms of solids with $St > 0.05$. The corresponding planet mass is $90M_{\oplus}$, $230M_{\oplus}$ and $500M_{\oplus}$ from top to bottom.}
+    \label{fig:gas_dust2}
+\end{figure*}
+% FFFFFFFFFFFFFFF
+
+
+Before describing our results for eccentric planets in more details, we stress that for $e=0$ the difference between the PIM inferred from our simulations (square symbols in Fig.~\ref{fig:ecc}) and that predicted by the semi-analytical prediction of \citet{Ataiee_etal2018} (filled circles, see Eq.~\ref{eq:Ataiee}) is very similar to that already reported in Figure~8 of \citet{Ataiee_etal2018}. For $e=0$ we thus recover the same results as \citet{Ataiee_etal2018} despite the few minor differences in the numerical setup of the simulations. Note also the overall good agreement between Eqs.~(\ref{eq:Ataiee}) and~(\ref{eq:B+2018_0}), especially at large viscosities (compare the filled circles and star symbols in Fig.~\ref{fig:ecc}; the quantity $\partial\ln P / \partial\ln r$ in the rightmost square bracket in Eq.~\ref{eq:B+2018_1} was substituted by $\sigma+\beta$ in light of our 2D disc model). Again, the reader is referred to the appendix A of \citet{Ataiee_etal2018} for a detailed comparison between Eqs.~(\ref{eq:Ataiee}) and~(\ref{eq:B+2018_0}).
+
+Now, moving to our results for eccentric planets, for our two lowest $\alpha$-viscosities, we find that the PIM first decreases with $e$, up to $e\sim h$, and it then increases monotonically for the range of eccentricities that we have considered ($e<0.2$). In particular, for $\alpha=10^{-4}$ and $e=0.05$, $M_p^{\bullet} \approx2.5M_{\oplus}$, which is $1M_{\oplus}$ less than the PIM in the circular case. A tentative explanation for this trend is as follows. When the eccentricity first increases, the relative velocity between the planet and the background gas increases, and so does the strength of the shock imparted by the planet's outer wake to the background gas. A moderately eccentric planet can thus provide a similar damping of angular momentum (or of potential vorticity) as a slightly more massive but circular planet. This is why the PIM first decreases upon increasing $e$. However, when the eccentricity is large enough, the planet has a larger excursion through the disc, and can deposit a smaller proportion of angular momentum to the background disc. It is as if the planet's outer wake was smoother or weaker. This explains why the PIM ultimately increases with $e$ at large $e$.
+
+
+
+Our results for $\alpha \leq 10^{-3}$ are further illustrated with the help of Fig.~\ref{fig:r_vs_St_IMEP}, which shows the position of the solid particles in the simulations superimposed on the gas surface density, as well as the Stokes number of the particles versus their orbital radius $r$. In the left column of the figure, the formation of a ring of particles for the largest sizes ($\gtrsim 0.1$ m) is clearly seen beyond the orbit of the planet, around the location of the pressure bump built up by the planet's outer wake. Even if the planet has reached its PIM based on our criterion, solids with $St \lesssim 0.05$ can still flow across the planet orbit and drift towards the central star, as can be seen in the right column of Fig.~\ref{fig:r_vs_St_IMEP}. We note that, if the solids with $0.01 < St < 0.05$ passing through the planet orbit were accreted with a 100$\%$ efficiency onto the planet, their contribution to the increase in the planet mass would be very small, as we have verified -- around five orders of magnitude less than for solids with $St>0.05$. It is also in line with the fact that pebble accretion onto planetary cores should be most efficient for solid particles with Stokes numbers in the range $[0.1-1]$ \citep[for a review see, e.g.,][]{2016SSRv..205...77B, 2017AREPS..45..359J}. We therefore think that the threshold Stokes number of 0.05 that we apply for the practical estimation of the PIM via our simulations is an appropriate value. It is also interesting to note the formation of a secondary ring of solid particles with $St<0.05$ slightly inward of the mean orbit of the planet when the latter is eccentric (see discussion below).
+
+The previous trend for how the PIM changes with $e$ does not hold for $\alpha \gtrsim 10^{-3}$, and we now find that the PIM increases monotonically with $e$. We think that there are two good reasons for this. First, increasing turbulent viscosity shortens the viscous diffusion timescale across the wakes, and it therefore smooths out more efficiently the shocks induced by the wakes, even when the planet is moderately eccentric. Second, a larger viscosity goes with a larger dust turbulent diffusivity, so that it is even easier for solid particles to get kicked out from a (weaker) pressure bump. Furthermore, recall that for $\alpha \gtrsim 10^{-3}$, eccentric planets do not reach a well-defined PIM because of the persistence of a flux of $St > 0.05$ particles crossing the planet orbit. This is actually illustrated by Fig.~\ref{fig:gas_dust2}, where it is clear that some particles with $St > 0.05$ can flow across the planet orbit, implying that their accretion by the planet may not be fully stalled. Although an eccentric planet cannot fully stop the flow of $St>0.05$ particles for $\alpha \gtrsim 10^{-3}$, this does not necessarily mean that the planet will accrete a substantial amount of pebbles. In that regard we mention the recent study of \citet{LO2018}, who have shown that dust turbulent diffusion could considerably reduce the efficiency of pebble accretion. An analysis of how an eccentric planet would effectively accrete pebbles in our hydrodynamical simulations is beyond the scope of this work. We note that an accumulation of solid particles in the planet's circumplanetary environment is clearly seen for the three simulations shown in Fig.~\ref{fig:gas_dust2}.
+
+Before closing this section, we note that the formation of a pressure bump outside the planet gap can be conveniently inferred, from the simulations, by the dimensionless quantity
+\begin{equation}
+\eta\equiv-\frac{h^2}{2}\frac{\partial\log P}{\partial \log r},
+ \label{eq:eta_p}
+\end{equation}
+which is a way to quantify how strong the radial pressure gradient is. For a circular planet which has just reached its PIM, the $\eta$ radial profile has a smooth behaviour with only a single null (or slightly negative) value outside the planet orbit, as can be seen in Figures 1 and 4 of \citet{Ataiee_etal2018} and \citet{Bitsch_etal2018}, respectively. For an eccentric planet that reaches its PIM, however, we find that the $\eta$ radial profile features several radii with null (or slightly negative) values near the planet orbit as can be seen in Fig.~\ref{fig:eta}. However, we find that only the orbital radii where the azimuthally-averaged $\eta$ profile becomes null or negative slightly beyond the planet orbit can form robust pressure bumps that are able to stall the pebbles flux, as can be seen in Fig.~\ref{fig:r_vs_St_IMEP}. In other words, although $\eta$ may well depend on azimuth, and have null or negative values at different azimuthal angles and different orbital radii (see dotted and dash-dotted curves in Fig.~\ref{fig:eta}), these locations do not constitute solid pressure bumps that are able stop the pebbles flux.
+% FFFFFFFFFFFFFFF
+\begin{figure}
+   \includegraphics[width=1.0\linewidth]{eta_phi_.pdf}
+  \caption{Dimensionless pressure gradient parameter $\eta(r,\varphi)$ (see Eq.~\ref{eq:eta_p}) versus orbital radius $r$ at $\varphi=0$ when the planet is either at its periastron or apoastron. Overplotted as a thick solid curve is the azimuthally-averaged profile of $\eta$ at apoastron. The planet eccentricity is $e=0.04$ (top) and $e=0.2$ (bottom), the disc turbulent viscosity is $\alpha=10^{-4}$ in both panels.}
+  \label{fig:eta}
+\end{figure}
+% FFFFFFFFFFFFFFF
+
+
+Furthermore, we show in Fig.~\ref{fig:eta2} the azimuthally-averaged radial profile of $\eta$ (hereafter, $\langle\eta\rangle_{\varphi}$) when an eccentric, PIM-reaching planet is at apoastron for $\alpha=5\times10^{-4}$ and three values of the planet eccentricity. It can be clearly seen that when the eccentricity increases, there can be several radii at which $\langle\eta\rangle_{\varphi}$ cancels out, and which thus constitute pressure traps where the flow of solid particles can be stalled. In particular, for $e=0.2$, a pressure bump forms inward of the planet orbit. It arises from the fact that, when an eccentric planet carves a gap there is a range of azimuthal angles where gas can pass through the gap and be accumulated over the radial extent $r_{\rm p}(1 \pm e)$ (see Fig. \ref{fig:two_gaps}). The planet actually opens a secondary gap near $r=r_{\rm p}(1-e)$, which is a little shallower than the main gap.
+
+\begin{figure}
+   \includegraphics[width=1.0\linewidth]{eta_average.pdf}
+  \caption{Azimuthally-averaged radial profile of the dimensionless pressure gradient $\eta$ (see Eq.~\ref{eq:eta_p}) when the planet is at apoastron, for $\alpha=5\times10^{-4}$ and three different eccentricities. The radial locations where this quantity cancels out correspond to pressure maxima that may trap solid particles, just like for circular planets, except that eccentric planets can feature several such locations.}
+  \label{fig:eta2}
+\end{figure}
+
+\begin{figure}
+   \includegraphics[width=1.1\linewidth]{gap_e.png}
+  \caption{Distribution of the gas surface density $\Sigma(r,\varphi)$ normalized by $\Sigma_0$ in polar coordinates for a planet with mass $M_p^{\bullet}=8.0M_\oplus$ on an $e=0.2$ eccentric orbit in an $\alpha=10^{-4}$ disc. White dotted lines represent the radial positions at $r_{\rm p}(1\pm e)$, respectively.}
+  \label{fig:two_gaps}
+\end{figure}
+
+%================================================
+\section{A simple fitting formula for the pebble isolation mass for eccentric planets}
+\label{sec:fit}
+%================================================
+We have shown in the previous section that only for $\alpha\leq10^{-3}$ does an eccentric planet (strictly) reach a PIM. With this in mind, we provide in this section a fitting expression for the dependence of the PIM with the eccentricity $e$ of the planet orbit. As shown by the solid curves in Fig.~\ref{fig:ecc}, our simulations results are well reproduced by the following expression:
+\begin{equation}
+M_p^{\bullet}(e) = M_p^{\bullet}(e=0) \times \left\{1 + (400\alpha+0.2)\frac{e}{h} - \frac{5e/h }{\left[8+\left(\dfrac{e}{h}\right)^3\right]}\right\},
+\label{eq:IMEP}
+\end{equation}
+\noindent with $M_p^{\bullet}(e=0)$ given by Eq.~(\ref{eq:Ataiee}). The relative difference between the PIM inferred from our simulations and that given by Eq.~(\ref{eq:IMEP}) does not exceed $10\%$.
+
+We point out that our new expression for the PIM includes a dependence with the disc aspect ratio $h$ and the Stokes number $St$, while our simulations were restricted to $h=0.04$ and computed the isolation mass for a threshold Stokes number of 0.05. It can thus be seen as an extension of the results of the semi-analytical derivation of \citet{Ataiee_etal2018} to non-zero eccentricities. This approach is justified by the good agreement obtained by \citet{Ataiee_etal2018} between the prediction of their semi-analytical derivation and their results of hydrodynamical simulations, as already mentioned above (see their Figure~8).
+
+
+%================================================
+\section{Discussion and Conclusions}
+\label{sec:conclusion}
+%================================================
+In this work we report the results of a set of 2D gas and dust hydrodynamical simulations including dust turbulent diffusion with the aim to determine the pebble isolation mass for planets on eccentric orbits in their protoplanetary disc. As stated in the introduction, several mechanisms may cause a planet to reach a substantial level of eccentricity in its disc. Our simulations do not focus on one such mechanism. Instead, a range of planet eccentricities is adopted that are kept constant in each simulation. It is however interesting to consider the case recently studied \citep[][]{2017MNRAS.469..206E,2019MNRAS.485.5035F} of low-mass planets made eccentric by the disturbance created in the disc by their own accretion luminosity. In such case, accretion may proceed in an intermittent manner in a low-viscosity disc: eccentric planets that reach a lower PIM stop accreting, their luminosity decays, and so does their eccentricity, so that pebbles start flowing inwards again. Our study generalizes the previous works by \citet{Bitsch_etal2018} and \citet{Ataiee_etal2018} which were for planets on fixed circular orbits.
+
+For $\alpha$-turbulent viscosities less than $10^{-3}$, our simulations show that eccentric planets reach a well-defined pebble isolation mass, at least for the range of eccentricities that we have probed ($e\leq0.2$). How the pebble isolation mass depends on eccentricity is also related to the turbulent viscosity. When the latter is small enough, the pebble isolation mass first decreases with $e$ so long as $e \lesssim h$ and increases beyond. As $\alpha$ approaches $10^{-3}$ the isolation mass increases rather smoothly with $e$. For $\alpha > 10^{-3}$, however, eccentric planets never fully contain the flow of pebble particles beyond the planet orbit, and such planets do not strictly reach an isolation mass. This is in contrast to circular planets, for which a well-defined pebble isolation mass is found even at large turbulent viscosities. This may have interesting implications for the formation of the cores of massive planets in highly turbulent protoplanetary discs, with the possibility of a reduced efficiency of accretion for eccentric planets \citep[][]{LO2018,2021A&A...647A.175O}. It would be interesting to examine whether such planets could still accrete gas with their envelope contraction not being hindered by the accretion of solids. 
+
+Furthermore, our results imply that the masses of potential planets derived via hydrodynamical simulations designed to match ALMA observations (e.g. \citealt{Zhang2018}) might be off by a factor of $\sim$2, if the planets harbor low eccentricities (see also \citealp{YXChen21}). In addition, our simulations show that pebble filtering by slightly eccentric planets embedded in discs with large turbulent viscosity is not efficient, implying that either Jupiter retained a circular orbit or that the Solar System's disc harbored a low viscosity to allow Jupiter's core to separate the reservoirs of carbonaceous and non-carbonaceous chondrites \citep{Kruijer2017}.
+
+Lastly, we provide a fitting expression for the dependency of pebble isolation mass with eccentricity which could be helpful for models of population synthesis considering cores of massive planets on orbits with low-to-moderate eccentricities \citep[][]{PMID:26289203,2016ApJ...825...63C,2019A&A...623A..88B,2020A&A...643A..66B,2021A&A...650A.116M,Izidoro21}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Acknowledgements}
+
+We thank our referee, Elena Lega, for a constructive report. The work of R.O.C. was supported by the Czech Science Foundation (grant 21-23067M) and also acknowledges a postdoctoral CONACyT grant with number 769351. F.M. gratefully acknowledges support from grants UNAM-DGAPA-PASPA and UNAM-DGAPA-PAPIIT IG-101-620, as well as the University of Nice-Sophia Antipolis and the Observatoire de la C\^ote d'Azur for hospitality. Computational resources were available thanks to a Marcos Moshinsky Chair. B.B. thanks the European Research Council (ERC Starting Grant 757448-PAMDORA) for their financial support.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Data Availability}
+
+The FARGO-ADSG code is available from \href{http://fargo.in2p3.fr/-FARGO-ADSG-}{http://fargo.in2p3.fr/-FARGO-ADSG-}. The code version including a Lagrangian treatment of the dust particles, Dusty FARGO-ADSG, can be made available for use on a collaborative basis upon request to C. Baruteau. The input files for generating our hydrodynamical simulations will be shared on reasonable request to the corresponding author.
+
+%%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
+
+% The best way to enter references is to use BibTeX:
+
+\bibliographystyle{mnras}
+\bibliography{paper} % if your bibtex file is called example.bib
+
+
+% Alternatively you could enter them by hand, like this:
+% This method is tedious and prone to error if you have lots of references
+%\begin{thebibliography}{99}
+%\bibitem[\protect\citeauthoryear{Author}{2012}]{Author2012}
+%Author A.~N., 2013, Journal of Improbable Astronomy, 1, 1
+%\bibitem[\protect\citeauthoryear{Others}{2013}]{Others2013}
+%Others S., 2012, Journal of Interesting Stuff, 17, 198
+%\end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% APPENDICES %%%%%%%%%%%%%%%%%%%%%
+
+%\appendix
+%================================================
+
+%=========
+
+
+% Don't change these lines
+\bsp	% typesetting comment
+\label{lastpage}
+\end{document}
+
+% End of mnras_template.tex

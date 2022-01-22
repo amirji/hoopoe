@@ -1,0 +1,612 @@
+Evaluating covid-19 vaccine efficacy and safety in the
+post-authorisation phase
+When covid-19 vaccines were first authorised, regulators required post-authorisation studies to
+tackle important uncertainties about efficacy and safety. But these studies may have little practical
+value unless there is greater engagement and scrutiny from the wider scientific community, argue
+Christof Prugger and colleagues
+Christof Prugger, 1
+Angela Spelsberg, 2
+Ulrich Keil, 3
+Juan Erviti, 4
+Peter Doshi5
+Expedited approval pathways have been increasingly
+used over the past 30 years to bring new medicines
+to market. The basic premise has been to give patients
+earlier access to medicines, often achieved by relying
+on less robust forms of evidence at the time of
+approval, such as showing efficacy against surrogate
+endpoints rather than patient outcomes.1
+Expedited approvals are often coupled with
+requirements to conduct post-authorisation studies
+to confirm that the medicines safely provide the
+anticipated benefit. But a long history of concerns
+has emerged about the wisdom of shifting clinically
+importantefficacyandsafetyassessmentsfrombefore
+to after authorisation.1 -4 Post-authorisation studies
+often fail to deliver—lots of studies are never started,
+many take years longer than planned, and some fail
+to confirm pre-authorisation results. Evidence on
+relevant outcomes often remains inconclusive for
+several years,5-7 and post-authorisation safety events
+are seen more frequently for drugs with expedited
+approval.8 Regulatorsonlyrarelysanctioncompanies
+for not adhering to post-authorisation study
+requirements, and drugs are only rarely withdrawn.2
+Covid-19 vaccines are the most recent and prominent
+example of expedited regulatory approval. Here, we
+discuss the need to strengthen the design, conduct,
+reporting, and dissemination of post-authorisation
+studies, using covid-19 vaccines as a case study. We
+take a close look at improving the transparency
+landscape for post-authorisation studies required by
+the European Medicines Agency (EMA), focusing on
+21 such studies for two mRNA vaccines, and argue
+that the appraisal of these studies should not be left
+to regulators alone. With active engagement of the
+wider scientific community, post-authorisation
+studies might finally deliver on their promise of
+providing answers to important questions in a timely
+fashion.
+Limited evidence at time of conditional
+approval
+The EMA granted conditional marketing
+authorisations for four covid-19 vaccines following
+theresultsofinterimanalysesofphaseIIIrandomised
+controlled trials. The European Union authorisations
+for the vaccines by Pfizer-BioNTech, Moderna,
+AstraZeneca, and Janssen are “conditional,”
+reflecting that, at the time of authorisation, less
+evidence than traditionally required for full approval
+was available on their safety and efficacy.9 -12
+At the two month mark, when the trials were
+assessed, manufacturers reported high efficacy
+relative to controls against laboratory confirmed
+covid-19 (of essentially any severity), but important
+unknowns remained. These included efficacy against
+SARS-CoV-2 infection, as well as severe covid-19 and
+the durability of efficacy after two years (the planned
+duration of the Pfizer-BioNTech pivotal trial
+(NCT04368728)).13 -16
+The US Food and Drug Administration listed
+important remaining unknowns in its review in
+December 2020: whether covid-19 vaccines reduce
+the risk of hospital admission, intensive care unit
+admission, severe covid-19, and mortality, as well as
+whether the vaccines are effective in populations at
+high risk of severe covid-19.17 18 Groups of particular
+interest, such as older, chronically ill, or
+immunocompromised people, were
+under-represented in or excluded from trials.19 -21
+Ongoing transmission in countries with high levels
+ofvaccinationhighlightstheimportanceofcontinued
+assessment of real world effectiveness.
+Safety data on uncommon adverse events, as well as
+medium or long term harms of any frequency, were
+necessarily limited at the time of mass vaccine rollout,
+leaving some of the most important questions about
+efficacy and safety to the post-authorisation phase.
+Since authorisation and vaccine rollout, numerous
+studies have been published reporting high vaccine
+effectiveness at the population level and among
+particular groups such as healthcare workers and
+elderly people.22 -27. But many of these studies have
+important limitations including lack of data on
+hospitaladmissions,death,andhighriskpopulations
+such as nursing home residents and people with
+comorbidities. Perhaps, more importantly, these
+studies were conducted outside of the regulatory
+framework—while they can be relevant they do not
+answer specific questions asked by regulators and
+might have limited influence on regulatory decisions.
+Post-authorisation studies
+After conditional marketing authorisation by the
+EMA, vaccine manufacturers Pfizer-BioNTech and
+Moderna agreed to carry out 13 and 8
+post-authorisation studies, respectively,2829 to assess
+important unknowns including: risk of vaccine
+associated enhanced disease28 29; effects in pregnant
+and breastfeeding women, people who were
+immunocompromised, frail, or with comorbidities or
+1
+the bmj | BMJ 2021;375:e067570 | doi: 10.1136/bmj-2021-067570
+ANALYSIS
+1 Institute of Public Health,
+Charité-Universitätsmedizin Berlin,
+Berlin, Germany
+2 Comprehensive Cancer Centre
+Aachen, Aachen, Germany
+3 Institute of Epidemiology and Social
+Medicine, University of Münster,
+Münster, Germany
+4 Unit of Innovation and Organization,
+Navarre Health Service, Pamplona,
+Spain
+5 University of Maryland School of
+Pharmacy, Baltimore, Maryland, USA
+Correspondence to: C Prugger
+christof.prugger@charite.dechristof.prugger@charite.de
+Cite this as: BMJ 2021;375:e067570
+http://dx.doi.org/10.1136/bmj-2021-067570
+Published: 23 December 2021
+Landbauwissenschaft.
+Protected
+by
+copyright.
+on
+28
+December
+2021
+at
+Universitat
+Bonn
+Zentralbibliothek
+http://www.bmj.com/
+BMJ:
+first
+published
+as
+10.1136/bmj-2021-067570
+on
+23
+December
+2021.
+Downloaded
+from
+autoimmune or inflammatory disorders; potential interaction
+between different vaccines; and to provide long term safety data.
+Conditional authorisation ensures that all post-authorisation
+obligations are legally binding and evaluated by the EMA. The
+requirements are codified in risk management plans written by the
+manufacturer and agreed by the regulator before authorisation.
+They are “an enforceable feature of the authorisation.”30 Risk
+management plans are publicly available documents detailing all
+planned and ongoing post-authorisation studies mandated by the
+EMA(seesupplementaryboxonbmj.com).Thesepost-authorisation
+(phase IV) studies contribute to the EU’s pharmacovigilance system
+alongside the more familiar spontaneous adverse event reporting
+schemes, EudraVigilance and the UK regulator’s Yellow Card
+Scheme.
+Although the drug industry is officially responsible for conducting
+post-authorisation studies and meeting agreed deadlines for
+milestones (such as protocol development and study completion),
+the actual work of designing, conducting, and reporting these
+important studies can be done by various non-industry actors, such
+as academic institutions. The EMA also commissions academic and
+private sector partners to conduct some post-authorisation studies
+through the ACCESS (vaccine covid-19 monitoring readiness)
+project.31
+Independent scrutiny
+We think that researchers should be involved in both the planning
+and appraisal of post-authorisation studies. Independent scrutiny
+of regulator sanctioned studies can help close knowledge gaps on
+the efficacy and safety of medicines authorised through expedited
+pathways, by ensuring the right questions are asked and answered
+in a timely manner. Extra scrutiny would help improve the
+historically poor track record of required post-authorisation studies.
+Independent researchers can ensure transparency, evaluate study
+methods, monitor progress, and appraise results (box 1).
+Box 1: Practical ways in which researchers can get involved in the
+appraisal of post-authorisation studies
+• Ensuring transparency—Study documents, including the study
+protocol and interim or final clinical study reports, should be available
+in registration databases, such as the EU electronic register of
+post-authorisation studies,32 but they are not always accessible in
+practice.
+• Evaluating study methods—Examine study protocols; are they well
+designed? Are the right questions being asked? Are the methods for
+answering the research questions appropriate? Current guidelines
+for good study design are produced by the European Network of
+Centres for Pharmacoepidemiology and Pharmacovigilance,33 and
+researchers can evaluate studies against these standards.
+• Monitor study progress—Analyse entries in study registers to consider
+whether important milestones, such as submission of interim analyses
+and final clinical study reports, are being achieved on time, as
+specified in risk management plans.
+• Examining results—Was the study carried out and analysed as
+specified in the study protocol? For example, were pre-specified
+primaryendpointsanalysed?Areresultstransparentlyandconsistently
+reported across different study reports (are findings in the study
+register fully consistent with those in a journal publication for
+example)?
+Patient and public participation in the process is also vital,
+particularly at the design stage. Only through patient and public
+involvement from the outset can we be sure that regulator mandated
+studies tackle the issues that matter most to patients. Moreover,
+specific informed consent should be obtained from participants in
+post-authorisation studies to allow sharing of individual patient
+data for independent scrutiny.
+Independent scrutiny matters. Mayo-Wilson and colleagues, for
+example, found serious discrepancies in the reporting of trials of
+gabapentin for neuropathic pain and quetiapine for bipolar
+depression across different sources. These discrepancies among
+key trial characteristics, such as effect size and significance level,
+were large enough to influence the interpretation of trial results
+affecting drug approval and further research.34 Similar scrutiny of
+post-authorisation studies has also identified major inconsistencies
+and inaccuracies; for example, a post-authorisation study of
+dabigatran etexilate for patients with moderate renal impairment
+having hip or knee replacement surgery saw important changes in
+sample size and an interim analysis that occurred between the
+protocol and the final study report (which was late).35 36
+Contrary to the current process, whereby regulators and drug
+companiesnegotiatepost-authorisationrequirementsbehindclosed
+doors, we argue for an open review of proposed study designs by
+independent scientists and patients, tackling issues such as study
+objectives, special populations of interest, study size and duration,
+primary and secondary outcomes, and the optimal time frame for
+reporting results. Such transparency is of even greater importance
+in view of emerging reports of “poor research conduct, lax data
+management, and a lack of regulatory oversight” at one of the
+contract research companies involved in a pivotal covid-19 vaccine
+trial.37
+To illustrate the range of post-authorisation studies in need of third
+party scrutiny, we compiled a list of 21 studies specified in risk
+management plans after conditional authorisation by EMA of
+Pfizer-BioNTech and Moderna vaccines against covid-19 (see
+supplementary table on bmj.com). Study protocols or summary
+information were available for only five of the 13 Pfizer-BioNTech
+studies, and five of the eight Moderna studies. Two Pfizer-BioNTech
+studies aimed to inform the development of new versions of the
+vaccine or to study the adverse effects of a booster dose in healthy
+populations and immunocompromised patients (C4591001,
+BNT162-01 Cohort 13). Similarly, two Moderna studies aimed to test
+the effects of different doses or a booster dose on serious adverse
+events and immunogenicity as primary end points in healthy
+populations (20-0003, mRNA-1273-P201). One of the more interesting
+studies in the risk management plan (EU-PAS 40404) evaluates
+safety outcomes of four different vaccines in specific populations
+of interest (Pfizer-BioNTech, Moderna, AstraZeneca, and Janssen).
+EU-PAS 40404 is also the only study independent of vaccine
+manufacturers.
+We could not locate either a protocol or summary information for
+the other eight Pfizer-BioNTech and three Moderna studies. Judging
+by the titles, some might provide information on hard outcomes
+such as severe covid-19 or hospital admissions (C4591011, C4591012,
+W1235284, W1235286). But the lack of publicly available study
+documents indicates that these studies have not been prioritised
+and remain at a very early stage.
+The post-authorisation studies being prioritised by manufacturers
+seem to be those aimed at developing new vaccines or obtaining
+approval for additional doses of the current vaccines. The need for
+data on hard outcomes such as hospital and intensive care
+admissions or death in moderate or high risk populations is being
+overlooked.
+the bmj | BMJ 2021;375:e067570 | doi: 10.1136/bmj-2021-067570
+2
+ANALYSIS
+Landbauwissenschaft.
+Protected
+by
+copyright.
+on
+28
+December
+2021
+at
+Universitat
+Bonn
+Zentralbibliothek
+http://www.bmj.com/
+BMJ:
+first
+published
+as
+10.1136/bmj-2021-067570
+on
+23
+December
+2021.
+Downloaded
+from
+Accessing study documents
+Documents and data from post-authorisation studies can be
+accessed from databases or registers by searching for the trial
+identification numbers specified in each vaccine’s risk management
+plan (see supplementary table). Some of the most important studies
+for covid-19 vaccines are continuations of phase III trials, required
+by regulators. Fortunately, proactive release of key trial documents
+such as clinical study reports is expected in Europe following EU
+regulation 536/2014.38 Although not fully implemented yet, the EMA
+has started publishing documents from EU trials in the European
+Clinical Trials Register, making public important information on
+trial protocols, status, and clinical study reports.39 Likewise, clinical
+study reports and other documents that supported conditional
+market authorisation are now available on the EMA’s Clinical Data
+Publication website.40
+The EMA plans to launch its new clinical trials information system
+in January 2022 as a single entry point for submitting clinical trial
+data in the EU. Clinical study reports and possibly other information
+in this system will be made public, subject to EU transparency rules.
+The EMA says that the system is already fully functional and that
+researchers should consider participating in its training programme
+on how to use it. The EMA is currently implementing a data analysis
+and real world interrogation network to generate timely evidence
+on the safety and effectiveness of medicines from healthcare
+databases.
+To date, the EMA is the only regulator that provides access to data
+and documents from mandated post-authorisation studies, making
+summary data from protocols and study reports available through
+the EU electronic Register of Post-Authorisation Studies (EU PAS
+Register).32 The register allows for public access to administrative
+details, study objectives and main results, methodological details,
+and published documents including the full protocol with a signed
+checklist, conflicts of interest and the signed code of conduct, but
+not all these data are consistently provided. Basic study information
+from post-authorisation studies required by the EMA can also be
+found in other registration databases such as ClinicalTrials.gov.
+Whendataandotherinformationarenotpubliclyavailable,freedom
+ofinformationrequestsforanyrecordsheldbytheagency,including
+unpublished clinical data, can be made by EU residents using an
+online form on EMA’s website.41 Unfortunately, releases can be
+delayed,42 and documents are often released with redactions (to
+protect privacy or confidential business information) that may
+impede researchers’ efforts.
+Although the US FDA and Health Canada also require
+post-authorisation studies, no proactive release of trial documents
+and data is yet in place. Health Canada does, however, provide
+easy, public access to clinical information related to studies
+underpinning authorisation.43 44 To our knowledge, the UK
+Medicines and Healthcare Products Regulatory Agency does not
+have any plans for proactive release of data.
+Making it happen
+As post-authorisation studies mandated contribute considerably to
+assessment of the efficacy and safety of medicines and vaccines,
+particularlythoseauthorisedthroughexpeditedprogrammes,public
+access to data held by regulators is critical and should include
+patient level data, if available. Access would ideally be established
+at the planning stage to allow debate between regulators, marketing
+authorisation holders, and the scientific community throughout
+the process—from protocol preparation to submission of study
+reports.
+Independent researcher engagement with regulatory studies largely
+remains an unfunded, voluntary effort. Funding bodies should
+consider giving a higher priority to these endeavours as money
+spent here would help improve the reliability, value, and timeliness
+of important post-authorisation studies. Journals also have a role
+in providing a place for third party critiques and analyses of
+post-authorisation studies, similar to the way many journals
+endorsed the restoring invisible and abandoned trials (RIAT)
+initiative, in which third party researchers reanalyse underlying
+study data independent of the original trialists.45
+Both the scientific community and the public increasingly perceive
+the urgent need for independent evaluation of regulatory
+requirements.46 Rigorous evaluation of covid-19 vaccines’ safety
+and efficacy in the post-authorisation phase is critically important
+and increasingly possible thanks to strengthened transparency
+requirements for regulators. Without external scrutiny, we risk
+repeating the mistakes of the past—with many promises made but
+little follow through.
+Regulatory agencies should continue to improve transparency by
+granting full access to all regulatory documents and available study
+data. And researchers should get involved in the independent
+evaluation of this material. Regulatory research (third party
+appraisal of industry funded studies mandated by regulatory
+authorities), independent of manufacturers and political interests,
+might relieve pressure on regulators47 and improve public trust by
+helping to ensure the safety, efficacy, and value of all medicines,
+including covid-19 vaccines—particularly those authorised through
+expedited regulatory pathways.
+Key messages
+• Expedited approval of medicines by regulatory authorities often
+postpones the evaluation of important efficacy and safety endpoints
+until after medicines are widely available
+• For such medicines, well designed, conducted, analysed, and reported
+post-authorisation studies are vital to ensuring confidence that
+benefits actually outweigh risks
+• Covid-19 vaccines were widely administered following “conditional”
+authorisation based on short clinical trials, when important questions
+remained unanswered
+• Regulators require sponsors to carry out post-authorisation safety
+and efficacy studies, which often remain relatively unknown outside
+of specialist circles, and there is a history of insufficient compliance
+and regulatory oversight
+• Independent researchers must help scrutinise the design, conduct,
+data reporting, and overall transparency of post-authorisation studies
+mandated by regulators, particularly for global public health
+interventions such as covid-19 vaccines
+Contributors and sources: The authors have extensively studied the role, practice, and contribution of
+post-marketing studies to pharmacovigilance in Europe. CP conceived the article, wrote the first draft
+and integrated input from co-authors and discussions in successive versions. All authors contributed
+to writing and editing. CP is the guarantor of the article.
+Patient involvement: No patients were involved. Dissemination to this group is not applicable.
+Competing interests: We have read and understood BMJ policy on declaration of interests and have
+the following interests to declare: PD has received travel funds from the European Respiratory Society
+(2012) and Uppsala Monitoring Center (2018); grants from the FDA (through University of Maryland
+M-CERSI; 2020), Laura and John Arnold Foundation (2017-22), American Association of Colleges of
+Pharmacy (2015), Patient-Centred Outcomes Research Institute (2014-16), Cochrane Methods
+Innovations Fund (2016-18), and UK National Institute for Health Research (2011-14); was an unpaid
+IMEDS steering committee member at the Reagan-Udall Foundation for the FDA (2016-2020), and is
+an editor at The BMJ. All other authors declare none.
+3
+the bmj | BMJ 2021;375:e067570 | doi: 10.1136/bmj-2021-067570
+ANALYSIS
+Landbauwissenschaft.
+Protected
+by
+copyright.
+on
+28
+December
+2021
+at
+Universitat
+Bonn
+Zentralbibliothek
+http://www.bmj.com/
+BMJ:
+first
+published
+as
+10.1136/bmj-2021-067570
+on
+23
+December
+2021.
+Downloaded
+from
+1 Dawoud D, Naci H, Ciani O, Bujkiewicz S. Raising the bar for using surrogate endpoints in drug
+regulation and health technology assessment. BMJ 2021;374:n2191.
+doi: 10.1136/bmj.n2191 pmid: 34526320
+2 Naci H, Smalley KR, Kesselheim AS. Characteristics of preapproval and postapproval studies for
+drugs granted accelerated approval by the US Food and Drug Administration. JAMA
+2017;318:626-36. doi: 10.1001/jama.2017.9415 pmid: 28810023
+3 Moore TJ, Furberg CD. Development times, clinical testing, postmarket follow-up, and safety risks
+for the new drugs approved by the US food and drug administration: the class of 2008. JAMA
+Intern Med 2014;174:90-5. doi: 10.1001/jamainternmed.2013.11813 pmid: 24166236
+4 Darrow JJ, Avorn J, Kesselheim AS. FDA approval and regulation of pharmaceuticals, 1983-2018.
+JAMA 2020;323:164-76. doi: 10.1001/jama.2019.20288 pmid: 31935033
+5 Davis C, Naci H, Gurpinar E, Poplavska E, Pinto A, Aggarwal A. Availability of evidence of benefits
+on overall survival and quality of life of cancer drugs approved by European Medicines Agency:
+retrospective cohort study of drug approvals 2009-13. BMJ 2017;359:j4530.
+doi: 10.1136/bmj.j4530 pmid: 28978555
+6 Beaver JA, Howie LJ, Pelosof L, etal. A 25-year experience of US Food and Drug Administration
+accelerated approval of malignant hematology and oncology drugs and biologics: a review. JAMA
+Oncol 2018;4:849-56. doi: 10.1001/jamaoncol.2017.5618 pmid: 29494733
+7 Gyawali B, Hey SP, Kesselheim AS. Assessment of the clinical benefit of cancer drugs receiving
+accelerated approval. JAMA Intern Med 2019;179:906-13.
+doi: 10.1001/jamainternmed.2019.0462 pmid: 31135808
+8 Downing NS, Shah ND, Aminawung JA, etal. Postmarket safety events among novel therapeutics
+approved by the US Food and Drug Administration Between 2001 and 2010. JAMA
+2017;317:1854-63. doi: 10.1001/jama.2017.5150 pmid: 28492899
+9 Polack FP, Thomas SJ, Kitchin N, etalC4591001 Clinical Trial Group. Safety and efficacy of the
+BNT162b2 mRNA covid-19 vaccine. N Engl J Med 2020;383:2603-15.
+doi: 10.1056/NEJMoa2034577 pmid: 33301246
+10 Jackson LA, Anderson EJ, Rouphael NG, etalmRNA-1273 Study Group. An mRNA vaccine against
+SARS-CoV-2—preliminary report. N Engl J Med 2020;383:1920-31.
+doi: 10.1056/NEJMoa2022483 pmid: 32663912
+11 Voysey M, Clemens SAC, Madhi SA, etalOxford COVID Vaccine Trial Group. Safety and efficacy
+of the ChAdOx1 nCoV-19 vaccine (AZD1222) against SARS-CoV-2: an interim analysis of four
+randomised controlled trials in Brazil, South Africa, and the UK. Lancet 2021;397:99-111.
+doi: 10.1016/S0140-6736(20)32661-1 pmid: 33306989
+12 Sadoff J, Le Gars M, Shukarev G, etal. Interim results of a phase 1-2a trial of Ad26.COV2.S covid-19
+vaccine. N Engl J Med 2021;384:1824-35. doi: 10.1056/NEJMoa2034201 pmid: 33440088
+13 Pfizer. A phase 1/2/3, placebo-controlled, randomized, observer-blind, dose-finding study to
+evaluate the safety, tolerability, immunogenicity, and efficacy of SARS-COV-2 RNA vaccine
+candiates against COVID-19 in healthy individuals. 2020. https://media.tghn.org/mediali-
+brary/2020/11/C4591001_Clinical_Protocol_Nov2020_Pfizer_BioNTech.pdf.
+14 Moderna. A Phase 3, Randomized, Stratified, Observer-Blind, Placebo-Controlled Study to Evaluate
+the Efficacy, Safety, and Immunogenicity of mRNA-1273 SARS-CoV-2 Vaccine in Adults Aged 18
+Years and Older. 2020. www.modernatx.com/sites/default/files/mRNA-1273-P301-Protocol.pdf.
+15 AstraZeneca. A phase III randomized, double-blind, placebo-controlled multicenter study in adults
+to determine the safety, efficacy, and immunogenicity of AZD1222, a non-replicating ChAdOx1
+vector vaccine, for the prevention of covid-19. 2020. http://s3.amazonaws.com/ctr-med-
+7111/D8110C00001/52bec400-80f6-4c1b-8791-0483923d0867/c8070a4e-6a9d-46f9-8c32-
+cece903592b9/D8110C00001_CSP-v2.pdf.
+16 Janssen Vaccines & Prevention. A randomized, double-blind, placebo-controlled phase 3 study
+to assess the efficacy and safety of Ad26.COV2.S for the prevention of SARS-CoV-2-mediated
+covid-19 in adults aged 18 years and older. 2020. www.jnj.com/coronavirus/ensemble-1-study-
+protocol.
+17 Food and Drug Administration. Moderna covid-19 vaccine emergency use authorization review
+memorandum. 2020. www.fda.gov/media/144673/download#page=55.
+18 Food and Drug Administration. Pfizer-BioNTech covid-19 vaccine emergency use authorization
+review memorandum. 2020. www.fda.gov/media/144416/download.
+19 Doshi P. Pfizer and Moderna’s “95% effective” vaccines—let’s be cautious and first see the full
+data. BMJ Opinion. 2020. blogs.bmj.com/bmj/2020/11/26/peter-doshi-pfizer-and-modernas-95-
+effective-vaccines-lets-be-cautious-and-first-see-the-full-data/.
+20 Doshi P. Pfizer and Moderna’s “95% effective” vaccines—we need more details and the raw
+data. BMJ Opinion. 2021. blogs.bmj.com/bmj/2021/01/04/peter-doshi-pfizer-and-modernas-95-
+effective-vaccines-we-need-more-details-and-the-raw-data/.
+21 Helfand BKI, Webb M, Gartaganis SL, Fuller L, Kwon CS, Inouye SK. The exclusion of older
+persons from vaccine and treatment trials for coronavirus disease 2019—missing the target.
+JAMA Intern Med 2020;180:1546-9. doi: 10.1001/jamainternmed.2020.5084 pmid: 32986099
+22 Amit S, Regev-Yochay G, Afek A, Kreiss Y, Leshem E. Early rate reductions of SARS-CoV-2
+infection and covid-19 in BNT162b2 vaccine recipients. Lancet 2021;397:875-7.
+doi: 10.1016/S0140-6736(21)00448-7 pmid: 33610193
+23 Vasileiou E, Simpson CR, Shi T, etal. Interim findings from first-dose mass covid-19 vaccination
+roll-out and covid-19 hospital admissions in Scotland: a national prospective cohort study. Lancet
+2021;397:1646-57. doi: 10.1016/S0140-6736(21)00677-2 pmid: 33901420
+24 Hall VJ, Foulkes S, Saei A, etalSIREN Study Group. Covid-19 vaccine coverage in health-care
+workers in England and effectiveness of BNT162b2 mRNA vaccine against infection (SIREN): a
+prospective, multicentre, cohort study. Lancet 2021;397:1725-35.
+doi: 10.1016/S0140-6736(21)00790-X pmid: 33901423
+25 Dagan N, Barda N, Kepten E, etal. BNT162b2 mRNA covid-19 vaccine in a nationwide mass
+vaccination setting. N Engl J Med 2021;384:1412-23.
+doi: 10.1056/NEJMoa2101765 pmid: 33626250
+26 Barda N, Dagan N, Ben-Shlomo Y, etal. Safety of the BNT162b2 mRNA Covid-19 vaccine in a
+nationwide setting. N Engl J Med 2021;385:1078-90.
+doi: 10.1056/NEJMoa2110475 pmid: 34432976
+27 Lopez Bernal J, Andrews N, Gower C, etal. Effectiveness of the Pfizer-BioNTech and
+Oxford-AstraZeneca vaccines on covid-19 related symptoms, hospital admissions, and mortality
+in older adults in England: test negative case-control study. BMJ 2021;373:n1088.
+doi: 10.1136/bmj.n1088 pmid: 33985964
+28 BioNTech. Covid-19 nRNA vaccine risk management plan. 2020. www.ema.europa.eu/en/docu-
+ments/rmp/comirnaty-epar-risk-management-plan_en.pdf.
+29 Moderna. EU risk management plan for covid-19 mRNA vaccine. 2020. www.ema.eu-
+ropa.eu/en/documents/rmp-summary/covid-19-vaccine-moderna-epar-risk-management-
+plan_en.pdf.
+30 European Medicines Agency. Questions and answers: conditional marketing authorisation of
+covid-19 vaccines in the EU. 2021. ec.europa.eu/commission/presscorner/detail/en/qan-
+da_20_2390.
+31 European Medicines Agency. EMA commissions independent research to prepare for real-world
+monitoring of covid-19 vaccines. 2020. www.ema.europa.eu/en/news/ema-commissions-inde-
+pendent-research-prepare-real-world-monitoring-covid-19-vaccines.
+32 European Network of Centres for Pharmacoepidemiology and Pharmacovigilance. The European
+Union electronic register of post-authorisation studies (EU PAS Register). www.encepp.eu/en-
+cepp/studiesDatabase.jsp.
+33 European Network of Centres for Pharmacoepidemiology and Pharmacovigilance. ENCePP
+checklist for study protocols (revision 4). 2018.www.encepp.eu/standards_and_guidances/check-
+ListProtocols.shtml.
+34 Mayo-Wilson E, Li T, Fusco N, etal. Cherry-picking by trialists and meta-analysts can drive
+conclusions about intervention efficacy. J Clin Epidemiol 2017;91:95-110.
+doi: 10.1016/j.jclinepi.2017.07.014 pmid: 28842290
+35 Spelsberg A, Prugger C, Doshi P, etalWorking Group on Health and Working Group on Freedom
+of Information, Transparency International Deutschland eV. Contribution of industry funded
+post-marketing studies to drug safety: survey of notifications submitted to regulatory agencies.
+BMJ 2017;356:j337. doi: 10.1136/bmj.j337 pmid: 28174182
+36 Spelsberg A, Keil U, Prugger C. Re: Contribution of industry funded post-marketing studies to
+drug safety: survey of notifications submitted to regulatory agencies. 2017.www.bmj.com/con-
+tent/356/bmj.j337/rr-5.
+37 Godlee F. Covid 19: A strong pandemic response relies on good data. BMJ 2021;375:n2668.
+doi: 10.1136/bmj.n2668.
+38 European Union. Regulation (EU) No 536/2014 of the European Parliament and of the council
+of 16 April 2014 on clinical trials on medicinal products for human use, and repealing directive
+2001/20/EC. Official Journal of the European Union 2014;L158:1-73.
+39 EU Clinical Trials Register www.clinicaltrialsregister.eu/ctr-search/search.
+40 European Medicines Agency. Clinical data. clinicaldata.ema.europa.eu/.
+41 European Medicines Agency. Send a question to the European Medicines Agency.
+www.ema.europa.eu/en/about-us/contact/send-question-european-medicines-agency.
+42 Doshi P, Jefferson T. Open data 5 years on: a case series of 12 freedom of information requests
+for regulatory data to the European Medicines Agency. Trials 2016;17:78.
+doi: 10.1186/s13063-016-1194-7 pmid: 26865363
+43 Lexchin J, Herder M, Doshi P. Canada finally opens up data on new drugs and devices. BMJ
+2019;365:l1825. doi: 10.1136/bmj.l1825 pmid: 30996020
+44 Health Canada. Search for clinical information on drugs and medical devices. clinical-informa-
+tion.canada.ca/.
+45 RIAT-friendly journals. restoringtrials.org/riat-friendly-journals/.
+46 Testing times. Nature 2015;526:5. doi: 10.1038/526005a pmid: 26432201
+47 Barnéoud L. Ce que disent les documents sur les vaccins anti-Covid-19 volés à l’Agence
+européenne des médicaments. Le Monde 2021. https://www.lemonde.fr/planete/arti-
+cle/2021/01/16/vaccins-ce-que-disent-les-documents-voles-a-l-agence-europeenne-des-
+medicaments_6066502_3244.html.
+This article is made freely available for use in accordance with BMJ's website terms and conditions for
+the duration of the covid-19 pandemic or until otherwise determined by BMJ. You may use, download
+and print the article for any lawful, non-commercial purpose (including text and data mining) provided
+that all copyright notices and trade marks are retained.
+the bmj | BMJ 2021;375:e067570 | doi: 10.1136/bmj-2021-067570
+4
+ANALYSIS
+Landbauwissenschaft.
+Protected
+by
+copyright.
+on
+28
+December
+2021
+at
+Universitat
+Bonn
+Zentralbibliothek
+http://www.bmj.com/
+BMJ:
+first
+published
+as
+10.1136/bmj-2021-067570
+on
+23
+December
+2021.
+Downloaded
+from
+
